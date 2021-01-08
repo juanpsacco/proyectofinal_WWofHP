@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizarding World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Langar&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- Metaetiquetas -->
+    <meta name="author" content="Juan Pablo Sacco">
+    <meta name="description" content="Sitio web del mundo mágico de Harry Potter.">
+    <meta name="keywords" content="harry, potter, hermione, dumbledore, rowling, voldemort, fantasticos, scamander, grindelwald, snape, magia, varitas, literatura, peliculas">
+    <!-- Metaetiquetas Opengraph -->
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Wizarding World">
+    <meta property="og:descrption" content="Sitio web del mundo mágico de Harry Potter.">
+    <meta property="og:url" content="https://www.wizardingworldofhp.com">
+    <meta property="og:image" content="imagenes/WW_logo_2018">
+</head>
+<body class="fondo">
+    <section>
+      <img src="imagenes/marauders-map.jpg" alt="" class="imagen-inicio fadein">
+    </section>
+    <section>
+      <img src="imagenes/intenciones-inicio.jpg" alt="" class="imagen-inicio fadein">
+    </section>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light menu_bg"> <!-- Navbar con dropdown -->
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="imagenes/WW_logo_2018.png" alt="Logo Wizarding World" class="imagen_central">
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#hechizos">Hechizos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#postales">Postales del Tour</a>
+                  </li>
+                  <li class="nav-item dropdown"> <!-- Dropdown -->
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tienda
+                    </a>
+                    <ul class="dropdown-menu dropdown-style" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="tienda.html">Varitas</a></li>
+                      <li><a class="dropdown-item" href="tienda.html">Merchandising</a></li>
+                      <li><a class="dropdown-item" href="tienda.html">Indumentaria</a></li>
+                    </ul>
+                  </li> <!-- Fin Dropdown -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto" aria-disabled="true">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex"> <!-- Buscador -->
+                  <input class="form-control me-2 button_font" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-dark button_font" type="submit">Accio</button>
+                </form> <!-- Fin buscador -->
+              </div>
+            </div>
+          </nav> <!-- Fin navbar -->
+    </header>
+    <h1>Wizarding World</h1>
+    <section class="row"> <!-- NavTab de casas -->
+        <ul class="nav nav-tabs nav-fill pestanas" id="myTab" role="tablist">
+          <li class="nav-item col-6 col-xl-auto" role="presentation">
+            <div class="imagen1 d-flex justify-content-center">
+              <a class="nav-link pestana1" id="gry-tab" data-bs-toggle="tab" href="#Gryffindor" role="tab" aria-controls="Gryffindor" aria-selected="true">
+                <img src="imagenes/Gryffindor_Pottermore.png" alt="Gryffindor" class="imagenInicio1 casa1">
+              </a>
+            </div>
+          </li>
+          <li class="nav-item col-6 col-xl-auto" role="presentation">
+            <div class="imagen2 d-flex justify-content-center">
+              <a class="nav-link pestana2" id="sly-tab" data-bs-toggle="tab" href="#Slytherin" role="tab" aria-controls="Slytherin" aria-selected="false">
+                <img src="imagenes/Slytherin_Pottermore.png" alt="Slytherin" class="imagenInicio2 casa1">
+              </a>
+            </div>
+          </li>
+          <li class="nav-item col-12 col-xl-auto" role="presentation">
+            <div class="imagen3 d-flex justify-content-center">
+              <a class="nav-link pestana5" id="hog-tab" data-bs-toggle="tab" href="#Hogwarts" role="tab" aria-controls="Hogwarts" aria-selected="false">
+                <img src="imagenes/Hogwarts_Pottermore.png" alt="Hogwarts" class="imagenInicio3 casa">
+              </a>
+            </div>
+          </li>
+          <li class="nav-item col-6 col-xl-auto" role="presentation">
+            <div class="imagen4 d-flex justify-content-center">
+              <a class="nav-link pestana3" id="huf-tab" data-bs-toggle="tab" href="#Hufflepuff" role="tab" aria-controls="Hufflepuff" aria-selected="false">
+                <img src="imagenes/Hufflepuff_Pottermore.png" alt="Hufflepuff" class="imagenInicio4 casa2">
+              </a>
+            </div>
+          </li>
+          <li class="nav-item col-6 col-xl-auto" role="presentation">
+            <div class="imagen5 d-flex justify-content-center">
+              <a class="nav-link pestana4" id="rav-tab" data-bs-toggle="tab" href="#Ravenclaw" role="tab" aria-controls="Ravenclaw" aria-selected="false">
+                <img src="imagenes/Ravenclaw_Pottermore.png" alt="Ravenclaw" class="imagenInicio5 casa2">
+              </a>
+            </div>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade texto1" id="Gryffindor" role="tabpanel" aria-labelledby="gry-tab">
+            <img src="imagenes/gryffindor-house.svg" alt="Sintesis Gryffindor" class="imagen-casa">
+            <p>Gryffindor es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en los libros de Harry Potter.</p>
+            <p>Gryffindor fue fundada por Godric Gryffindor, un gran mago honorable y valiente nacido en Godric's Hollow, el mismo pueblo que Harry y Albus Dumbledore.</p>
+            <p>Datos y características principales de la casa Gryffindor:</p>
+            <p>
+              <ul>
+                <li>Jefe de la casa: Minerva McGonagall.</li>
+                <li>Colores representativos: escarlata y dorado.</li>
+                <li>Animal representativo: león.</li>
+                <li>Fundador: Godric Gryffindor.</li>
+                <li>Fantasma: Sir Nicholas de Mimsy-Porpington (más conocido como Nick Casi Decapitado).</li>
+                <li>Características: coraje y valentía. Un buen miembro de Gryffindor tiene gran osadía, temple y caballerosidad. Son capaces de todo por defender en lo que creen y nunca se dan por vencidos. También son capaces de romper las reglas si es necesario y les encantan los retos, cuanto más difíciles, mejor. Se atreven a lo que la mayoría no se atreve. En cada obstáculo ven una oportunidad para demostrar quienes son realmente.</li>
+                <li>Localización: la Torre de Gryffindor, o torre este, en el séptimo piso del castillo. A un lado de la torre oeste, o torre de Ravenclaw.</li>
+                <li>Curiosidad: Godric Gryffindor solo acogía a los magos valientes y honorables, ya que eso era lo que el fundador más apreciaba.</li>
+                <li>Reliquia más preciada: su espada (perteneció a Godric Gryffindor), aunque también está el Sombrero Seleccionador, que es el sombrero de Godric Gryffindor.</li>
+                <li>Significado del nombre: grifo dorado.</li>
+                <li>Elemento de Gryffindor: fuego, pues está asociado con el valor y el coraje de esta casa.</li>
+              </ul>
+            </p>
+          </div>
+          <div class="tab-pane fade texto2" id="Slytherin" role="tabpanel" aria-labelledby="sly-tab">
+              <img src="imagenes/slytherin-house.svg" alt="Sintesis Slytherin" class="imagen-casa">
+              <p>Slytherin es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts en el universo de ficción de los libros y películas de la saga Harry Potter. Cada una de estas casas corresponde a uno de los fundadores de Hogwarts, en este caso a Salazar Slytherin.</p>
+              <p>Características principales de Slytherin:</p>
+              <ul>
+                  <li>Jefe de la casa: Severus Snape. En el séptimo libro, Horace Slughorn ocupa este cargo, ya que Severus Snape se convierte en director.</li>
+                  <li>Colores representativos: verde esmeralda y plata.</li>
+                  <li>Animal representativo: serpiente</li>
+                  <li>Fundador: Salazar Slytherin</li>
+                  <li>Fantasma: El Barón Sanguinario</li>
+                  <li>Significado: Es una variación del verbo en inglés slithering, que significa literalmente "deslizándose".</li>
+                  <li>Características: Son personas que utilizan cualquier medio para lograr sus fines, poseen determinación, ambición, un cierto desdén por las normas, astucia, aspiraciones de grandeza y hambre de poder. Tienden a dudar antes de actuar, con el fin de sopesar todos los posibles resultados antes de decidir exactamente lo que se debe hacer y, una vez que lo averiguan, lo consiguen, dándole igual los medios para lograrlo.</li>
+                  <li>Localización: Su sala común está ubicada bajo el lago, el acceso se encuentra tras unos laberínticos pasillos, en las mazmorras, tras una puerta, escaleras abajo del vestíbulo. Tras la pared de piedra, se halla la Sala Común y las habitaciones, que incluyen lámparas de techo que iluminan toda su verde belleza: sillones de cuero negro, sillas y mesas de madera tallada, cubiertas de elaborados manteles.</li>
+                  <li>Elemento: Agua, asociado a la versatilidad y capacidad de adaptación de los Slytherins.</li>
+              </ul>
+          </div>
+          <div class="tab-pane fade active show texto5" id="Hogwarts" role="tabpanel" aria-labelledby="hog-tab">
+            <p>Hufflepuff es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de fantasía y ficción de los libros de Harry Potter.</p>
+            <p>Esta casa fue fundada por Helga Hufflepuff. Esta casa resalta las virtudes de aquellos que son justos, leales y que no temen el trabajo pesado. Sus estudiantes son honestos, trabajadores y justos.</p>
+            <p>Datos y características principales de la casa Hufflepuff:</p>
+            <ul>
+              <li>Jefa de la casa: Pomona Sprout.</li>
+              <li>Colores representativos: amarillo y negro.</li>
+              <li>Animal representativo: tejón.</li>
+              <li>Fundadora: Helga Hufflepuff.</li>
+              <li>Fantasma: El Fraile Gordo.</li>
+              <li>Características: justos, leales y trabajadores. Los hufflepuff son buenas personas y suelen caer bien a todo el mundo. Son pacientes, tolerantes y siempre harán todo de forma honrada, sin hacer trampas y respetando las reglas.</li>
+              <li>Localización: la entrada a la sala común está escondida en una pila de grandes barriles en un hueco a la derecha del corredor de la cocina. Golpea el segundo barril empezando a contar desde abajo, en medio de la segunda línea, siguiendo el ritmo de “Helga Hufflepuff” y la tapa se abrirá. Es la única casa de Hogwarts que tiene una forma de repeler a los extraños. Si se golpea la tapa equivocada o el ritmo no es el correcto, el intruso será bañado en vinagre.</li>
+              <li>Reliquia más preciada: la copa de Helga Hufflepuff, que más tarde se convirtió en un Horrocrux por lord Voldemort que se la robó a una anciana llamada Hepzibah Smith.</li>
+              <li>Significado del nombre: es un desarrollo a partir de los verbos ingleses "huff" (jadear) y "puff" (resoplido), en relación a la laboriosidad que se les atribuye a sus miembros.</li>
+              <li>Curiosidades: la sala común de Hufflepuff se encuentra al lado de las cocinas (los sótanos) debido a que Helga Hufflepuff tenía un gran arte en la gastronomía y muchas de sus recetas las siguen usando los elfos de Hogwarts.</li>
+              <li>Elemento de Hufflepuff: tierra, asociada a la laboriosidad propia de esta casa.</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade texto3" id="Hufflepuff" role="tabpanel" aria-labelledby="huf-tab">
+            <img src="imagenes/hufflepuff-house.svg" alt="Sintesis Hufflepuff" class="imagen-casa">
+            <p>Hufflepuff es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de fantasía y ficción de los libros de Harry Potter.</p>
+            <p>Esta casa fue fundada por Helga Hufflepuff. Esta casa resalta las virtudes de aquellos que son justos, leales y que no temen el trabajo pesado. Sus estudiantes son honestos, trabajadores y justos.</p>
+            <p>Datos y características principales de la casa Hufflepuff:</p>
+            <ul>
+              <li>Jefa de la casa: Pomona Sprout.</li>
+              <li>Colores representativos: amarillo y negro.</li>
+              <li>Animal representativo: tejón.</li>
+              <li>Fundadora: Helga Hufflepuff.</li>
+              <li>Fantasma: El Fraile Gordo.</li>
+              <li>Características: justos, leales y trabajadores. Los hufflepuff son buenas personas y suelen caer bien a todo el mundo. Son pacientes, tolerantes y siempre harán todo de forma honrada, sin hacer trampas y respetando las reglas.</li>
+              <li>Localización: la entrada a la sala común está escondida en una pila de grandes barriles en un hueco a la derecha del corredor de la cocina. Golpea el segundo barril empezando a contar desde abajo, en medio de la segunda línea, siguiendo el ritmo de “Helga Hufflepuff” y la tapa se abrirá. Es la única casa de Hogwarts que tiene una forma de repeler a los extraños. Si se golpea la tapa equivocada o el ritmo no es el correcto, el intruso será bañado en vinagre.</li>
+              <li>Reliquia más preciada: la copa de Helga Hufflepuff, que más tarde se convirtió en un Horrocrux por lord Voldemort que se la robó a una anciana llamada Hepzibah Smith.</li>
+              <li>Significado del nombre: es un desarrollo a partir de los verbos ingleses "huff" (jadear) y "puff" (resoplido), en relación a la laboriosidad que se les atribuye a sus miembros.</li>
+              <li>Curiosidades: la sala común de Hufflepuff se encuentra al lado de las cocinas (los sótanos) debido a que Helga Hufflepuff tenía un gran arte en la gastronomía y muchas de sus recetas las siguen usando los elfos de Hogwarts.</li>
+              <li>Elemento de Hufflepuff: tierra, asociada a la laboriosidad propia de esta casa.</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade texto4" id="Ravenclaw" role="tabpanel" aria-labelledby="rav-tab">
+            <img src="imagenes/ravenclaw-house.svg" alt="Sintesis Ravenclaw" class="imagen-casa">
+            <p>Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.</p>
+            <p>Datos y características principales de la casa Ravenclaw:</p>
+            <ul>
+              <li>Jefe de la casa: Filius Flitwick.</li>
+              <li>Colores representativos: azul y bronce en los libros, azul y plata en las películas.</li>
+              <li>Animal representativo: águila (a pesar de que el nombre de la casa incluya la palabra 'cuervo' en inglés).</li>
+              <li>Fundadora: Rowena Ravenclaw.</li>
+              <li>Fantasma: Helena Ravenclaw (hija de Rowena Ravenclaw), mejor conocida como la Dama Gris.</li>
+              <li>Cualidades requeridas: inteligencia, curiosidad y sabiduría. Una mente dispuesta y creatividad.</li>
+              <li>Localización: la torre de Ravenclaw, o torre oeste, en el séptimo piso del castillo, a un lado de la torre este o torre de Gryffindor.</li>
+              <li>Guardia de entrada: una puerta sin picaporte, en la que una aldaba con forma de águila formula una pregunta o acertijo para poder entrar, que no es siempre la misma. Es necesario dar la respuesta correcta para que la puerta se abra. De lo contrario, habrá que esperar a que llegue otro estudiante o profesor que pueda resolver el acertijo propuesto.</li>
+              <li>Elemento de Ravenclaw : aire, ya que se asocia con la creatividad y la sabiduría, dos características fundamentales de esta casa.</li>
+              <li>Significado del nombre: garra de cuervo (aunque en la versión francesa se llama Serdaigle -del francés serre d'aigle, literalmente garra de águila-).</li>
+              <li>"Una inteligencia sin límites es el mayor tesoro de los hombres" se considera la frase que resume el espíritu de la casa.</li>
+              <li>Se es un Ravenclaw: cuando se posee una mente hábil y dispuesta, grandes habilidades intelectuales y gran aprecio por el arte.</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    <section id="hechizos"> <!-- Seccion hechizos -->
+      <h2 class="lookBook">Hechizos</h2>
+      <div class="hechizos-contenedor d-flex justify-content-center">
+        <ul class="row">
+          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/Accio.png" alt=""></li>
+          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/Aguamenti.png" alt=""></li>
+          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/ArrestoMomentum.png" alt=""></li>
+          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/Bombarda.png" alt=""></li>
+          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/Diffindo.png" alt=""></li>
+          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/Ebublio.png" alt=""></li>
+          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/ExpectoPatronum.png" alt=""></li>
+          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/Finite.png" alt=""></li>
+          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/Flipendo.png" alt=""></li>
+          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/Incendio.png" alt=""></li>
+          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/MeteoloembrujoRecanto.png" alt=""></li>
+          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/Riddikkulus.png" alt=""></li>
+        </ul>
+      </div>
+    </section>
+    <section id="postales" class="postalesSeccion"> <!-- Carrousel de fotos -->
+    <h2 class="lookBook">Postales del Tour</h2>
+    <div id="carouselIndicadores" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselIndicadores" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselIndicadores" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselIndicadores" data-bs-slide-to="2"></li>
+          <li data-bs-target="#carouselIndicadores" data-bs-slide-to="3"></li>
+          <li data-bs-target="#carouselIndicadores" data-bs-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner carousel-position">
+          <div class="carousel-item active">
+            <img src="imagenes/HogwartsHP.jpg" class="d-block w-50" alt="Hogwarts en Tour London">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/GranComedorHP.jpg" class="d-block w-50" alt="Gran Comedor en Tour London">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/OficinaDumbledoreHP.jpg" class="d-block w-50" alt="Oficina de Dumbledore en Tour London">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/GringottsHP.jpg" class="d-block w-50" alt="Banco Gringotts en Tour London">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/BosqueProhibidoHP.jpg" class="d-block w-50" alt="Bosque Prohibido en Tour London">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselIndicadores" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselIndicadores" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </a>
+      </div>
+    </section>
+    <section id="contacto" class="contactoSeccion">
+    <h2 class="contacto">Contacto</h2>
+            <div>
+                <ul>
+                    <li>@Twitter</li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>e-mail</li>
+                </ul>
+              </div>
+    </section>
+    <section class="nosotrosSeccion">
+    <footer class="pie">
+        <h6>Creado con magia</h6>
+    </footer>
+    </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

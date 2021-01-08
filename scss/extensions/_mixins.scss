@@ -1,0 +1,5 @@
+@mixin transform($propiedad) {
+    -webkit-transform: $propiedad;
+    transform: $propiedad;
+    -ms-transform: $propiedad;
+}

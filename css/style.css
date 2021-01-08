@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 720px) {
+  .imagenInicio1, .imagenInicio2, .imagenInicio3, .imagenInicio4, .imagenInicio5 {
+    display: block;
+    height: 120px;
+  }
+
+  .imagen1, .imagen2, .imagen4, .imagen5 {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .imagen3 {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 960px) {
+  .imagenInicio1, .imagenInicio2, .imagenInicio3, .imagenInicio4, .imagenInicio5 {
+    display: block;
+    height: 150px;
+  }
+}
+@media only screen and (min-width: 961px) and (max-width: 1140px) {
+  .imagenInicio1, .imagenInicio2, .imagenInicio3, .imagenInicio4, .imagenInicio5 {
+    display: block;
+    height: 180px;
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 1141px) {
+  .imagenInicio1, .imagenInicio2, .imagenInicio3, .imagenInicio4, .imagenInicio5 {
+    display: block;
+    height: 250px;
+    margin-top: 20px;
+  }
+}
+.imagen-inicio {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+.fadein {
+  animation-delay: 3s;
+  animation-duration: 5s;
+  animation-name: fadein;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+    z-index: -2;
+  }
+}
+.fondo {
+  background-image: url(../imagenes/marauders-map.jpg);
+}
+
+.imagen_central {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu_bg {
+  background-color: #EAD38A;
+}
+
+.dropdown-style {
+  background-color: #dcdcdc;
+}
+
+.button_font {
+  font-family: "Langar", cursive;
+}
+
+.buscador {
+  display: flex;
+  justify-content: end;
+}
+
+a, span, h1 {
+  text-decoration: none;
+  font-family: "Langar", cursive;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  color: #EAD38A;
+  text-shadow: 1px 1px grey;
+}
+
+a, span {
+  color: black;
+}
+
+.inicio-container {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+
+.casas {
+  text-align: center;
+  margin: 0 10px;
+}
+
+.casa1:hover {
+  -webkit-transform: scale(1.1) rotateZ(-45deg);
+  transform: scale(1.1) rotateZ(-45deg);
+  -ms-transform: scale(1.1) rotateZ(-45deg);
+}
+
+.casa:hover {
+  -webkit-transform: scale(1.1) translate(0, -10px);
+  transform: scale(1.1) translate(0, -10px);
+  -ms-transform: scale(1.1) translate(0, -10px);
+}
+
+.casa2:hover {
+  -webkit-transform: scale(1.1) rotateZ(45deg);
+  transform: scale(1.1) rotateZ(45deg);
+  -ms-transform: scale(1.1) rotateZ(45deg);
+}
+
+.imagen-inicio {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-family: "Langar", cursive;
+}
+
+.pestana1, .texto1 {
+  background-color: #D98880 !important;
+}
+
+.pestana2, .texto2 {
+  background-color: #A9DFBF !important;
+}
+
+.pestana3, .texto3 {
+  background-color: #F7DC6F !important;
+}
+
+.pestana4, .texto4 {
+  background-color: #85C1E9 !important;
+}
+
+.pestana5, .texto5 {
+  background-color: #EAD38A !important;
+}
+
+.imagen-casa {
+  width: 380px;
+  display: flex;
+  float: left;
+  padding: 15px 30px 15px 15px;
+}
+
+.texto1, .texto2, .texto3, .texto4 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.lookBook {
+  text-align: center;
+}
+
+.imagen {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.look-container {
+  margin: auto;
+  display: flex;
+}
+
+.contacto {
+  margin: 0 10px;
+}
+
+span ul li {
+  list-style-type: square;
+  color: black;
+  margin-left: 30px;
+}
+
+.hechizos-contenedor {
+  width: 80%;
+}
+
+.hechizo-item {
+  list-style: none;
+  display: block;
+  padding: 10px;
+}
+.hechizo-item:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+
+.postalesSeccion {
+  margin-bottom: 20px;
+}
+
+.carousel-position {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactoSeccion {
+  margin-bottom: 20px;
+  background-color: #EAD38A;
+}
+
+.pie {
+  margin-left: 440px;
+  font-family: "Langar", cursive;
+  color: darkred;
+  font-size: 1.2rem;
+}
+
+button {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.item {
+  display: block;
+  height: 200px;
+}
+
+.varitas {
+  font-family: "Langar", cursive;
+}
+
+.nav-button:active, .nav-button:hover {
+  background-color: #EAD38A;
+  color: #FFF;
+}
+
+/*# sourceMappingURL=style.css.map */
