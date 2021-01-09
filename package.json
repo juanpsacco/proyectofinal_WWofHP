@@ -1,11 +1,23 @@
 {
   "name": "proyectofinal",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanpsacco/proyectofinal_WWofHP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juanpsacco/proyectofinal_WWofHP/issues"
+  },
+  "homepage": "https://github.com/juanpsacco/proyectofinal_WWofHP#readme",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
 }
