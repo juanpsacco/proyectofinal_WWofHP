@@ -3,3 +3,8 @@
     transform: $propiedad;
     -ms-transform: $propiedad;
 }
+@mixin transition($propiedad) {
+    -webkit-transition: $propiedad;
+    transition: $propiedad;
+    -ms-transition: $propiedad;
+}

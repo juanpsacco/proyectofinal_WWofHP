@@ -21,12 +21,12 @@
     <meta property="og:image" content="imagenes/WW_logo_2018">
 </head>
 <body class="fondo">
-    <section>
+    <!-- <section>
       <img src="imagenes/marauders-map.jpg" alt="" class="imagen-inicio fadein">
     </section>
     <section>
       <img src="imagenes/intenciones-inicio.jpg" alt="" class="imagen-inicio fadein">
-    </section>
+    </section> -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light menu_bg"> <!-- Navbar con dropdown -->
             <div class="container-fluid">
@@ -70,7 +70,8 @@
           </nav> <!-- Fin navbar -->
     </header>
     <h1>Wizarding World</h1>
-    <section class="row"> <!-- NavTab de casas -->
+    <div class="vacio"></div>
+    <section class="row section-position fondo-superior"> <!-- NavTab de casas -->
         <ul class="nav nav-tabs nav-fill pestanas" id="myTab" role="tablist">
           <li class="nav-item col-6 col-xl-auto" role="presentation">
             <div class="imagen1 d-flex justify-content-center">
@@ -108,122 +109,373 @@
             </div>
           </li>
         </ul>
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade texto1" id="Gryffindor" role="tabpanel" aria-labelledby="gry-tab">
-            <img src="imagenes/gryffindor-house.svg" alt="Sintesis Gryffindor" class="imagen-casa">
-            <p>Gryffindor es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en los libros de Harry Potter.</p>
-            <p>Gryffindor fue fundada por Godric Gryffindor, un gran mago honorable y valiente nacido en Godric's Hollow, el mismo pueblo que Harry y Albus Dumbledore.</p>
-            <p>Datos y características principales de la casa Gryffindor:</p>
-            <p>
-              <ul>
-                <li>Jefe de la casa: Minerva McGonagall.</li>
-                <li>Colores representativos: escarlata y dorado.</li>
-                <li>Animal representativo: león.</li>
-                <li>Fundador: Godric Gryffindor.</li>
-                <li>Fantasma: Sir Nicholas de Mimsy-Porpington (más conocido como Nick Casi Decapitado).</li>
-                <li>Características: coraje y valentía. Un buen miembro de Gryffindor tiene gran osadía, temple y caballerosidad. Son capaces de todo por defender en lo que creen y nunca se dan por vencidos. También son capaces de romper las reglas si es necesario y les encantan los retos, cuanto más difíciles, mejor. Se atreven a lo que la mayoría no se atreve. En cada obstáculo ven una oportunidad para demostrar quienes son realmente.</li>
-                <li>Localización: la Torre de Gryffindor, o torre este, en el séptimo piso del castillo. A un lado de la torre oeste, o torre de Ravenclaw.</li>
-                <li>Curiosidad: Godric Gryffindor solo acogía a los magos valientes y honorables, ya que eso era lo que el fundador más apreciaba.</li>
-                <li>Reliquia más preciada: su espada (perteneció a Godric Gryffindor), aunque también está el Sombrero Seleccionador, que es el sombrero de Godric Gryffindor.</li>
-                <li>Significado del nombre: grifo dorado.</li>
-                <li>Elemento de Gryffindor: fuego, pues está asociado con el valor y el coraje de esta casa.</li>
-              </ul>
-            </p>
+      <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade texto1" id="Gryffindor" role="tabpanel" aria-labelledby="gry-tab"> <!-- Pestaña Gryffindor -->
+            <div class="row contenedor-tarjetas">
+              <div class="card col-3 tarjeta gry-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    Gryffindor es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en los libros de Harry Potter. Gryffindor fue fundada por Godric Gryffindor, un gran mago honorable y valiente nacido en Godric's Hollow, el mismo pueblo que Harry y Albus Dumbledore.
+                  </div>
+                  <img src="imagenes/GodricGriffindor.jpg" class="card-img-top imagen-tarjeta" alt="Godric Gryffindor - Fundador de la casa Gryffindor">
+                  <div class="card-body">
+                    <h5 class="card-title">Godric Gryffindor</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-3 tarjeta gry-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                  </div>
+                  <img src="imagenes/PM_Sala_comun_de_Gryffindor.jpg" class="card-img-top imagen-tarjeta" alt="Sala común de Gryffindor">
+                  <div class="card-body">
+                    <h5 class="card-title">Sala común de Gryffindor</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-3 tarjeta gry-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                  </div>
+                  <img src="imagenes/espadagry.jpg" class="card-img-top imagen-tarjeta" alt="Reliquia de Gryffindor - Espada de Godric Gryffindor">
+                  <div class="card-body">
+                    <h5 class="card-title">Espada de Godric Gryffindor</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-3 tarjeta gry-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                  </div>
+                  <img src="imagenes/Minerva_after_battle.jpg" class="card-img-top imagen-tarjeta" alt="Jefa de casa - Minerva McGonagall">
+                  <div class="card-body">
+                    <h5 class="card-title">Minerva McGonagall</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- Fin Pestaña Gryffindor -->
+        <div class="tab-pane fade texto2" id="Slytherin" role="tabpanel" aria-labelledby="sly-tab"> <!-- Pestaña Slytherin -->
+          <div class="row contenedor-tarjetas">
+            <div class="card col-3 tarjeta sly-sec">
+              <div class="contenedor-texto-tarjeta">
+                <div class="texto-tarjeta">
+                  Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                </div>
+                <img src="imagenes/Salazarslytherin.jpg" class="card-img-top imagen-tarjeta" alt="Salazar Slytherin - Fundador de la casa Slytherin">
+                <div class="card-body">
+                  <h5 class="card-title">Salazar Slytherin</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card col-3 tarjeta sly-sec">
+              <div class="contenedor-texto-tarjeta">
+                <div class="texto-tarjeta">
+                  Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                </div>
+                <img src="imagenes/PM_Sala_comun_de_Slytherin.jpg" class="card-img-top imagen-tarjeta" alt="Sala común de Slytherin">
+                <div class="card-body">
+                  <h5 class="card-title">Sala común de Slytherin</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+                </div>
+              </div>
+            </div>
+            <div class="card col-3 tarjeta sly-sec">
+              <div class="contenedor-texto-tarjeta">
+                <div class="texto-tarjeta">
+                  Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                </div>
+                <img src="imagenes/guardapelosly.jpg" class="card-img-top imagen-tarjeta" alt="Reliquia de Slytherin - Guardapelo de Salazar Slytherin">
+                <div class="card-body">
+                  <h5 class="card-title">Guardapelo de Salazar Slytherin</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card col-3 tarjeta sly-sec">
+              <div class="contenedor-texto-tarjeta">
+                <div class="texto-tarjeta">
+                  Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                </div>
+                <img src="imagenes/SeverusSnape.jpg" class="card-img-top imagen-tarjeta" alt="Jefe de casa - Severus Snape">
+                <div class="card-body">
+                  <h5 class="card-title">Severus Snape</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="tab-pane fade texto2" id="Slytherin" role="tabpanel" aria-labelledby="sly-tab">
-              <img src="imagenes/slytherin-house.svg" alt="Sintesis Slytherin" class="imagen-casa">
-              <p>Slytherin es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts en el universo de ficción de los libros y películas de la saga Harry Potter. Cada una de estas casas corresponde a uno de los fundadores de Hogwarts, en este caso a Salazar Slytherin.</p>
-              <p>Características principales de Slytherin:</p>
-              <ul>
-                  <li>Jefe de la casa: Severus Snape. En el séptimo libro, Horace Slughorn ocupa este cargo, ya que Severus Snape se convierte en director.</li>
-                  <li>Colores representativos: verde esmeralda y plata.</li>
-                  <li>Animal representativo: serpiente</li>
-                  <li>Fundador: Salazar Slytherin</li>
-                  <li>Fantasma: El Barón Sanguinario</li>
-                  <li>Significado: Es una variación del verbo en inglés slithering, que significa literalmente "deslizándose".</li>
-                  <li>Características: Son personas que utilizan cualquier medio para lograr sus fines, poseen determinación, ambición, un cierto desdén por las normas, astucia, aspiraciones de grandeza y hambre de poder. Tienden a dudar antes de actuar, con el fin de sopesar todos los posibles resultados antes de decidir exactamente lo que se debe hacer y, una vez que lo averiguan, lo consiguen, dándole igual los medios para lograrlo.</li>
-                  <li>Localización: Su sala común está ubicada bajo el lago, el acceso se encuentra tras unos laberínticos pasillos, en las mazmorras, tras una puerta, escaleras abajo del vestíbulo. Tras la pared de piedra, se halla la Sala Común y las habitaciones, que incluyen lámparas de techo que iluminan toda su verde belleza: sillones de cuero negro, sillas y mesas de madera tallada, cubiertas de elaborados manteles.</li>
-                  <li>Elemento: Agua, asociado a la versatilidad y capacidad de adaptación de los Slytherins.</li>
-              </ul>
+        </div> <!-- Fin Pestaña Slytherin -->
+          <div class="tab-pane fade active show texto5" id="Hogwarts" role="tabpanel" aria-labelledby="hog-tab"> <!-- Pestaña Hogwarts -->
+            <div class="row contenedor-tarjetas">
+              <div class="card col-3 tarjeta hog-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                  </div>
+                  <img src="imagenes/rowenaravenclaw.jpg" class="card-img-top imagen-tarjeta" alt="Rowena Ravenclaw - Fundadora de la casa Ravenclaw">
+                  <div class="card-body">
+                    <h5 class="card-title">Rowena Ravenclaw</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-3 tarjeta hog-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                  </div>
+                  <img src="imagenes/ravenclawsalacomun.png" class="card-img-top imagen-tarjeta" alt="Sala común de Ravenclaw">
+                  <div class="card-body">
+                    <h5 class="card-title">Sala común de Ravenclaw</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-3 tarjeta hog-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                  </div>
+                  <img src="imagenes/diademarav.jpg" class="card-img-top imagen-tarjeta" alt="Reliquia de Ravenclaw - Diadema de Rowena Ravenclaw">
+                  <div class="card-body">
+                    <h5 class="card-title">Diadema de Rowena Ravenclaw</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-3 tarjeta hog-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                  </div>
+                  <img src="imagenes/Filius_flitwick.jpg" class="card-img-top imagen-tarjeta" alt="Jefe de casa - Filius Flitwick">
+                  <div class="card-body">
+                    <h5 class="card-title">Filius Flitwick</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- Fin Pestaña Hogwarts -->
+          <div class="tab-pane fade texto3" id="Hufflepuff" role="tabpanel" aria-labelledby="huf-tab"> <!-- Pestaña Hufflepuff -->
+            <div class="row contenedor-tarjetas">
+              <div class="card col-3 tarjeta huf-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                  </div>
+                  <img src="imagenes/Helgahufflepuff.jpg" class="card-img-top imagen-tarjeta" alt="Helga Hufflepuff - Fundadora de la casa Hufflepuff">
+                  <div class="card-body">
+                    <h5 class="card-title">Helga Hufflepuff</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-3 tarjeta huf-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                  </div>
+                  <img src="imagenes/PM_Sala_comun_de_Hufflepuff.jpg" class="card-img-top imagen-tarjeta" alt="Sala común de Hufflepuff">
+                  <div class="card-body">
+                    <h5 class="card-title">Sala común de Hufflepuff</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-3 tarjeta huf-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                  </div>
+                  <img src="imagenes/copahuff.jpg" class="card-img-top imagen-tarjeta" alt="Reliquia de Hufflepuff - Copa de Helga Hufflepuff">
+                  <div class="card-body">
+                    <h5 class="card-title">Copa de Helga Hufflepuff</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-3 tarjeta huf-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                  </div>
+                  <img src="imagenes/pomonasprout.jpg" class="card-img-top imagen-tarjeta" alt="Jefa de casa - Pomona Sprout">
+                  <div class="card-body">
+                    <h5 class="card-title">Pomona Sprout</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- Fin pestaña Hufflepuff -->
+          <div class="tab-pane fade texto4" id="Ravenclaw" role="tabpanel" aria-labelledby="rav-tab"> <!-- Pestaña Ravenclaw -->
+            <div class="row contenedor-tarjetas">
+              <div class="card col-3 tarjeta rav-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                  </div>
+                  <img src="imagenes/rowenaravenclaw.jpg" class="card-img-top imagen-tarjeta" alt="Rowena Ravenclaw - Fundadora de la casa Ravenclaw">
+                  <div class="card-body">
+                    <h5 class="card-title">Rowena Ravenclaw</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-3 tarjeta rav-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                  </div>
+                  <img src="imagenes/ravenclawsalacomun.png" class="card-img-top imagen-tarjeta" alt="Sala común de Ravenclaw">
+                  <div class="card-body">
+                    <h5 class="card-title">Sala común de Ravenclaw</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-3 tarjeta rav-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                  </div>
+                  <img src="imagenes/diademarav.jpg" class="card-img-top imagen-tarjeta" alt="Reliquia de Ravenclaw - Diadema de Rowena Ravenclaw">
+                  <div class="card-body">
+                    <h5 class="card-title">Diadema de Rowena Ravenclaw</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-3 tarjeta rav-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                  </div>
+                  <img src="imagenes/Filius_flitwick.jpg" class="card-img-top imagen-tarjeta" alt="Jefe de casa - Filius Flitwick">
+                  <div class="card-body">
+                    <h5 class="card-title">Filius Flitwick</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="tab-pane fade active show texto5" id="Hogwarts" role="tabpanel" aria-labelledby="hog-tab">
-            <p>Hufflepuff es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de fantasía y ficción de los libros de Harry Potter.</p>
-            <p>Esta casa fue fundada por Helga Hufflepuff. Esta casa resalta las virtudes de aquellos que son justos, leales y que no temen el trabajo pesado. Sus estudiantes son honestos, trabajadores y justos.</p>
-            <p>Datos y características principales de la casa Hufflepuff:</p>
-            <ul>
-              <li>Jefa de la casa: Pomona Sprout.</li>
-              <li>Colores representativos: amarillo y negro.</li>
-              <li>Animal representativo: tejón.</li>
-              <li>Fundadora: Helga Hufflepuff.</li>
-              <li>Fantasma: El Fraile Gordo.</li>
-              <li>Características: justos, leales y trabajadores. Los hufflepuff son buenas personas y suelen caer bien a todo el mundo. Son pacientes, tolerantes y siempre harán todo de forma honrada, sin hacer trampas y respetando las reglas.</li>
-              <li>Localización: la entrada a la sala común está escondida en una pila de grandes barriles en un hueco a la derecha del corredor de la cocina. Golpea el segundo barril empezando a contar desde abajo, en medio de la segunda línea, siguiendo el ritmo de “Helga Hufflepuff” y la tapa se abrirá. Es la única casa de Hogwarts que tiene una forma de repeler a los extraños. Si se golpea la tapa equivocada o el ritmo no es el correcto, el intruso será bañado en vinagre.</li>
-              <li>Reliquia más preciada: la copa de Helga Hufflepuff, que más tarde se convirtió en un Horrocrux por lord Voldemort que se la robó a una anciana llamada Hepzibah Smith.</li>
-              <li>Significado del nombre: es un desarrollo a partir de los verbos ingleses "huff" (jadear) y "puff" (resoplido), en relación a la laboriosidad que se les atribuye a sus miembros.</li>
-              <li>Curiosidades: la sala común de Hufflepuff se encuentra al lado de las cocinas (los sótanos) debido a que Helga Hufflepuff tenía un gran arte en la gastronomía y muchas de sus recetas las siguen usando los elfos de Hogwarts.</li>
-              <li>Elemento de Hufflepuff: tierra, asociada a la laboriosidad propia de esta casa.</li>
-            </ul>
-          </div>
-          <div class="tab-pane fade texto3" id="Hufflepuff" role="tabpanel" aria-labelledby="huf-tab">
-            <img src="imagenes/hufflepuff-house.svg" alt="Sintesis Hufflepuff" class="imagen-casa">
-            <p>Hufflepuff es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de fantasía y ficción de los libros de Harry Potter.</p>
-            <p>Esta casa fue fundada por Helga Hufflepuff. Esta casa resalta las virtudes de aquellos que son justos, leales y que no temen el trabajo pesado. Sus estudiantes son honestos, trabajadores y justos.</p>
-            <p>Datos y características principales de la casa Hufflepuff:</p>
-            <ul>
-              <li>Jefa de la casa: Pomona Sprout.</li>
-              <li>Colores representativos: amarillo y negro.</li>
-              <li>Animal representativo: tejón.</li>
-              <li>Fundadora: Helga Hufflepuff.</li>
-              <li>Fantasma: El Fraile Gordo.</li>
-              <li>Características: justos, leales y trabajadores. Los hufflepuff son buenas personas y suelen caer bien a todo el mundo. Son pacientes, tolerantes y siempre harán todo de forma honrada, sin hacer trampas y respetando las reglas.</li>
-              <li>Localización: la entrada a la sala común está escondida en una pila de grandes barriles en un hueco a la derecha del corredor de la cocina. Golpea el segundo barril empezando a contar desde abajo, en medio de la segunda línea, siguiendo el ritmo de “Helga Hufflepuff” y la tapa se abrirá. Es la única casa de Hogwarts que tiene una forma de repeler a los extraños. Si se golpea la tapa equivocada o el ritmo no es el correcto, el intruso será bañado en vinagre.</li>
-              <li>Reliquia más preciada: la copa de Helga Hufflepuff, que más tarde se convirtió en un Horrocrux por lord Voldemort que se la robó a una anciana llamada Hepzibah Smith.</li>
-              <li>Significado del nombre: es un desarrollo a partir de los verbos ingleses "huff" (jadear) y "puff" (resoplido), en relación a la laboriosidad que se les atribuye a sus miembros.</li>
-              <li>Curiosidades: la sala común de Hufflepuff se encuentra al lado de las cocinas (los sótanos) debido a que Helga Hufflepuff tenía un gran arte en la gastronomía y muchas de sus recetas las siguen usando los elfos de Hogwarts.</li>
-              <li>Elemento de Hufflepuff: tierra, asociada a la laboriosidad propia de esta casa.</li>
-            </ul>
-          </div>
-          <div class="tab-pane fade texto4" id="Ravenclaw" role="tabpanel" aria-labelledby="rav-tab">
-            <img src="imagenes/ravenclaw-house.svg" alt="Sintesis Ravenclaw" class="imagen-casa">
-            <p>Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.</p>
-            <p>Datos y características principales de la casa Ravenclaw:</p>
-            <ul>
-              <li>Jefe de la casa: Filius Flitwick.</li>
-              <li>Colores representativos: azul y bronce en los libros, azul y plata en las películas.</li>
-              <li>Animal representativo: águila (a pesar de que el nombre de la casa incluya la palabra 'cuervo' en inglés).</li>
-              <li>Fundadora: Rowena Ravenclaw.</li>
-              <li>Fantasma: Helena Ravenclaw (hija de Rowena Ravenclaw), mejor conocida como la Dama Gris.</li>
-              <li>Cualidades requeridas: inteligencia, curiosidad y sabiduría. Una mente dispuesta y creatividad.</li>
-              <li>Localización: la torre de Ravenclaw, o torre oeste, en el séptimo piso del castillo, a un lado de la torre este o torre de Gryffindor.</li>
-              <li>Guardia de entrada: una puerta sin picaporte, en la que una aldaba con forma de águila formula una pregunta o acertijo para poder entrar, que no es siempre la misma. Es necesario dar la respuesta correcta para que la puerta se abra. De lo contrario, habrá que esperar a que llegue otro estudiante o profesor que pueda resolver el acertijo propuesto.</li>
-              <li>Elemento de Ravenclaw : aire, ya que se asocia con la creatividad y la sabiduría, dos características fundamentales de esta casa.</li>
-              <li>Significado del nombre: garra de cuervo (aunque en la versión francesa se llama Serdaigle -del francés serre d'aigle, literalmente garra de águila-).</li>
-              <li>"Una inteligencia sin límites es el mayor tesoro de los hombres" se considera la frase que resume el espíritu de la casa.</li>
-              <li>Se es un Ravenclaw: cuando se posee una mente hábil y dispuesta, grandes habilidades intelectuales y gran aprecio por el arte.</li>
-            </ul>
+      </div> <!-- Fin Pestaña Ravenclaw -->
+    </section>
+    <section id="hechizos" class="section-position fondo-superior"> <!-- Seccion hechizos -->
+      <div class="custom-shape-divider-top-1610211513">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <rect x="1200" height="3.6"></rect>
+            <rect height="3.6"></rect>
+            <path d="M0,0V3.6H580.08c11,0,19.92,5.09,19.92,13.2,0-8.14,8.88-13.2,19.92-13.2H1200V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+      <h2 class="lookBook">Hechizos</h2>
+      <div class="hechizos-contenedor row">
+          <div class="card bg-dark text-white col-sm-12 col-md-6 col-lg-3 hechizo">
+          <img src="imagenes/Accio.png" class="card-img" alt="Hechizo Accio">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Accio</h5>
+            <p class="card-text">This is a wider caritiononger.</p>
           </div>
         </div>
-    </section>
-    <section id="hechizos"> <!-- Seccion hechizos -->
-      <h2 class="lookBook">Hechizos</h2>
-      <div class="hechizos-contenedor d-flex justify-content-center">
-        <ul class="row">
-          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/Accio.png" alt=""></li>
-          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/Aguamenti.png" alt=""></li>
-          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/ArrestoMomentum.png" alt=""></li>
-          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/Bombarda.png" alt=""></li>
-          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/Diffindo.png" alt=""></li>
-          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/Ebublio.png" alt=""></li>
-          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/ExpectoPatronum.png" alt=""></li>
-          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/Finite.png" alt=""></li>
-          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/Flipendo.png" alt=""></li>
-          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/Incendio.png" alt=""></li>
-          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/MeteoloembrujoRecanto.png" alt=""></li>
-          <li class="col-sm-12 col-md-6 col-lg-2 hechizo-item"><img src="imagenes/Riddikkulus.png" alt=""></li>
-        </ul>
+        <div class="card bg-dark text-white col-sm-12 col-md-6 col-lg-3 hechizo">
+          <img src="imagenes/Aguamenti.png" class="card-img" alt="Hechizo Aguamenti">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Aguamenti</h5>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+        <div class="card bg-dark text-white col-sm-12 col-md-6 col-lg-3 hechizo">
+          <img src="imagenes/Alohomora.png" class="card-img" alt="Hechizo Alohomora">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Alohomora</h5>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+        <div class="card bg-dark text-white col-sm-12 col-md-6 col-lg-3 hechizo">
+          <img src="imagenes/ArrestoMomentum.png" class="card-img" alt="Hechizo Arresto Momentum">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Arresto Momentum</h5>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+        <div class="card bg-dark text-white col-sm-12 col-md-6 col-lg-3 hechizo">
+          <img src="imagenes/Bombarda.png" class="card-img" alt="Hechizo Bombarda">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Bombarda</h5>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+        <div class="card bg-dark text-white col-sm-12 col-md-6 col-lg-3 hechizo">
+          <img src="imagenes/Diffindo.png" class="card-img" alt="Hechizo Diffindo">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Diffindo</h5>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+        <div class="card bg-dark text-white col-sm-12 col-md-6 col-lg-3 hechizo">
+          <img src="imagenes/Ebublio.png" class="card-img" alt="Hechizo Ebublio">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Ebulio</h5>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+        <div class="card bg-dark text-white col-sm-12 col-md-6 col-lg-3 hechizo">
+          <img src="imagenes/ExpectoPatronum.png" class="card-img" alt="Hechizo Expecto Patronum">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Expecto Patronum</h5>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+        <div class="card bg-dark text-white col-sm-12 col-md-6 col-lg-3 hechizo">
+          <img src="imagenes/Finite.png" class="card-img" alt="Hechizo Finite">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Finite</h5>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+        <div class="card bg-dark text-white col-sm-12 col-md-6 col-lg-3 hechizo">
+          <img src="imagenes/Flipendo.png" class="card-img" alt="Hechizo Flipendo">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Flipendo</h5>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+        <div class="card bg-dark text-white col-sm-12 col-md-6 col-lg-3 hechizo">
+          <img src="imagenes/Incendio.png" class="card-img" alt="Hechizo Incendio">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Incendio</h5>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
+        <div class="card bg-dark text-white col-sm-12 col-md-6 col-lg-3 hechizo">
+          <img src="imagenes/MeteoloembrujoRecanto.png" class="card-img" alt="Hechizo Meteoloembrujo Recanto">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Meteoloembrujo Recanto</h5>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
+        </div>
       </div>
     </section>
-    <section id="postales" class="postalesSeccion"> <!-- Carrousel de fotos -->
+    <section id="postales" class="postalesSeccion section-position fondo-superior"> <!-- Carrousel de fotos -->
+      <div class="custom-shape-divider-top-1610211513">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <rect x="1200" height="3.6"></rect>
+            <rect height="3.6"></rect>
+            <path d="M0,0V3.6H580.08c11,0,19.92,5.09,19.92,13.2,0-8.14,8.88-13.2,19.92-13.2H1200V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
     <h2 class="lookBook">Postales del Tour</h2>
     <div id="carouselIndicadores" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
@@ -235,19 +487,19 @@
         </ol>
         <div class="carousel-inner carousel-position">
           <div class="carousel-item active">
-            <img src="imagenes/HogwartsHP.jpg" class="d-block w-50" alt="Hogwarts en Tour London">
+            <img src="imagenes/HogwartsHP.jpg" class="d-block w-75" alt="Hogwarts en Tour London">
           </div>
           <div class="carousel-item">
-            <img src="imagenes/GranComedorHP.jpg" class="d-block w-50" alt="Gran Comedor en Tour London">
+            <img src="imagenes/GranComedorHP.jpg" class="d-block w-75" alt="Gran Comedor en Tour London">
           </div>
           <div class="carousel-item">
-            <img src="imagenes/OficinaDumbledoreHP.jpg" class="d-block w-50" alt="Oficina de Dumbledore en Tour London">
+            <img src="imagenes/OficinaDumbledoreHP.jpg" class="d-block w-75" alt="Oficina de Dumbledore en Tour London">
           </div>
           <div class="carousel-item">
-            <img src="imagenes/GringottsHP.jpg" class="d-block w-50" alt="Banco Gringotts en Tour London">
+            <img src="imagenes/GringottsHP.jpg" class="d-block w-75" alt="Banco Gringotts en Tour London">
           </div>
           <div class="carousel-item">
-            <img src="imagenes/BosqueProhibidoHP.jpg" class="d-block w-50" alt="Bosque Prohibido en Tour London">
+            <img src="imagenes/BosqueProhibidoHP.jpg" class="d-block w-75" alt="Bosque Prohibido en Tour London">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselIndicadores" role="button" data-bs-slide="prev">
@@ -260,7 +512,7 @@
         </a>
       </div>
     </section>
-    <section id="contacto" class="contactoSeccion">
+    <section id="contacto" class="contactoSeccion fondo-superior">
     <h2 class="contacto">Contacto</h2>
             <div>
                 <ul>
@@ -271,7 +523,7 @@
                 </ul>
               </div>
     </section>
-    <section class="nosotrosSeccion">
+    <section class="nosotrosSeccion fondo-superior">
     <footer class="pie">
         <h6>Creado con magia</h6>
     </footer>

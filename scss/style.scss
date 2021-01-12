@@ -41,13 +41,7 @@
         margin-top: 20px;
     }
 }
-.imagen-inicio {
-    display: flex;
-    width: 100%;
-    position: fixed;
-    z-index: 2;
-}
-.fadein {
+/* .fadein {
     animation-delay: 3s;
     animation-duration: 5s;
     animation-name: fadein;
@@ -64,18 +58,25 @@
         opacity: 0%;
         z-index: -2;
    }
-  }
+  } */
 .fondo {
-    background-image: url(../imagenes/marauders-map.jpg);
+    background-image: url(../imagenes/intenciones-inicio.jpg);
+    background-size: 100vw;
+    background-attachment: fixed;
+}
+.vacio {
+    height: 500px;
+    width: 100%;
+}
+.fondo-superior {
+    background-image: url(../imagenes/marauders_bg.jpg);
 }
 .imagen_central {
     height: 60px;
     display: flex;
     justify-content: center;
 }
-.menu_bg {
-    background-color: $color-background;
-}
+
 .dropdown-style {
     background-color: #dcdcdc;
 }
@@ -117,36 +118,79 @@ a, span {
 .casa2:hover {
     @include transform(scale(1.1) rotateZ(45deg));
 }
-.imagen-inicio {
-    display: flex;
-    justify-content: center;
-}
 h2 {
     font-family: $font-primary;
 }
 .pestana1, .texto1 {
     background-color: $color-gryffindor !important;
+    box-shadow: 5px 5px 5px #686868;
 }
 .pestana2, .texto2 {
     background-color: $color-slytherin !important;
+    box-shadow: 5px 5px 5px #686868;
 }
 .pestana3, .texto3 {
     background-color: $color-hufflepuff !important;
+    box-shadow: 5px 5px 5px #686868;
 }
 .pestana4, .texto4 {
     background-color: $color-ravenclaw !important;
+    box-shadow: 5px 5px 5px #686868;
 }
 .pestana5, .texto5 {
     background-color: $color-background !important;
+    box-shadow: 5px 5px 5px #686868;
 }
-.imagen-casa {
-    width: 380px;
+.contenedor-tarjetas {
     display: flex;
-    float: left;
-    padding: 15px 30px 15px 15px;
+    justify-content: space-around;
+    .tarjeta {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 18rem;
+        box-shadow: 5px 5px 5px #686868;
+        .imagen-tarjeta {
+            margin-top: 10px;
+        }
+    }
+    .gry-sec{
+        background-color: $color-gryffindor-sec;
+    }
+    .sly-sec{
+        background-color: $color-slytherin-sec;
+    }
+    .hog-sec{
+        background-color: $color-hogwarts-sec;
+    }
+    .huf-sec{
+        background-color: $color-hufflepuff-sec;
+    }
+    .rav-sec{
+        background-color: $color-ravenclaw-sec;
+    }
 }
-.texto1, .texto2, .texto3, .texto4 {
-    font-family: $font-secundary;
+.texto-tarjeta {
+    position: absolute;
+    top:0;
+    left:0;
+    padding:10px;
+    margin:0;
+    z-index: -1;
+    color: honeydew;
+}
+.contenedor-texto-tarjeta {
+    display:inline-block;
+    position:relative;
+    &:hover {
+        .imagen-tarjeta{
+            opacity: 0.17;
+            @include transition (opacity 500ms);
+        }
+        .texto-tarjeta {
+            z-index: 1;
+            opacity: 1;
+        }
+    }
 }
 .lookBook {
     text-align: center;
@@ -170,12 +214,14 @@ span ul li {
     margin-left: 30px;
 }
 .hechizos-contenedor {
-    width: 80%;
+    display: flex;
+    justify-content: center;
 }
-.hechizo-item {
-    list-style: none;
-    display: block;
+.hechizo {
+    font-family: $font-secundary;
     padding: 10px;
+    margin: 5px;
+    box-shadow: 5px 5px 5px #686868;
     &:hover {
         @include transform(scale(1.1));
     }
@@ -210,4 +256,26 @@ button {
 .nav-button:active, .nav-button:hover {
     background-color: $color-background;
     color: #FFF;
+}
+.section-position {
+    position: relative;
+}
+.custom-shape-divider-top-1610211513 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1610211513 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 278px;
+}
+
+.custom-shape-divider-top-1610211513 .shape-fill {
+    fill: #00000000;
 }

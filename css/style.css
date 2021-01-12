@@ -40,42 +40,43 @@
     margin-top: 20px;
   }
 }
-.imagen-inicio {
-  display: flex;
-  width: 100%;
-  position: fixed;
-  z-index: 2;
-}
-
-.fadein {
-  animation-delay: 3s;
-  animation-duration: 5s;
-  animation-name: fadein;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 100%;
+/* .fadein {
+    animation-delay: 3s;
+    animation-duration: 5s;
+    animation-name: fadein;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
-  to {
-    opacity: 0%;
-    z-index: -2;
-  }
-}
+
+  @keyframes fadein {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+        z-index: -2;
+   }
+  } */
 .fondo {
-  background-image: url(../imagenes/marauders-map.jpg);
+  background-image: url(../imagenes/intenciones-inicio.jpg);
+  background-size: 100vw;
+  background-attachment: fixed;
+}
+
+.vacio {
+  height: 500px;
+  width: 100%;
+}
+
+.fondo-superior {
+  background-image: url(../imagenes/marauders_bg.jpg);
 }
 
 .imagen_central {
   height: 60px;
   display: flex;
   justify-content: center;
-}
-
-.menu_bg {
-  background-color: #EAD38A;
 }
 
 .dropdown-style {
@@ -136,44 +137,87 @@ a, span {
   -ms-transform: scale(1.1) rotateZ(45deg);
 }
 
-.imagen-inicio {
-  display: flex;
-  justify-content: center;
-}
-
 h2 {
   font-family: "Langar", cursive;
 }
 
 .pestana1, .texto1 {
   background-color: #D98880 !important;
+  box-shadow: 5px 5px 5px #686868;
 }
 
 .pestana2, .texto2 {
   background-color: #A9DFBF !important;
+  box-shadow: 5px 5px 5px #686868;
 }
 
 .pestana3, .texto3 {
   background-color: #F7DC6F !important;
+  box-shadow: 5px 5px 5px #686868;
 }
 
 .pestana4, .texto4 {
   background-color: #85C1E9 !important;
+  box-shadow: 5px 5px 5px #686868;
 }
 
 .pestana5, .texto5 {
   background-color: #EAD38A !important;
+  box-shadow: 5px 5px 5px #686868;
 }
 
-.imagen-casa {
-  width: 380px;
+.contenedor-tarjetas {
   display: flex;
-  float: left;
-  padding: 15px 30px 15px 15px;
+  justify-content: space-around;
+}
+.contenedor-tarjetas .tarjeta {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 18rem;
+  box-shadow: 5px 5px 5px #686868;
+}
+.contenedor-tarjetas .tarjeta .imagen-tarjeta {
+  margin-top: 10px;
+}
+.contenedor-tarjetas .gry-sec {
+  background-color: #9C7900;
+}
+.contenedor-tarjetas .sly-sec {
+  background-color: #5C5C5C;
+}
+.contenedor-tarjetas .hog-sec {
+  background-color: #DEBA47;
+}
+.contenedor-tarjetas .huf-sec {
+  background-color: #5C5C5C;
+}
+.contenedor-tarjetas .rav-sec {
+  background-color: #9A7339;
 }
 
-.texto1, .texto2, .texto3, .texto4 {
-  font-family: "Ubuntu", sans-serif;
+.texto-tarjeta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  margin: 0;
+  z-index: -1;
+  color: honeydew;
+}
+
+.contenedor-texto-tarjeta {
+  display: inline-block;
+  position: relative;
+}
+.contenedor-texto-tarjeta:hover .imagen-tarjeta {
+  opacity: 0.17;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+}
+.contenedor-texto-tarjeta:hover .texto-tarjeta {
+  z-index: 1;
+  opacity: 1;
 }
 
 .lookBook {
@@ -203,15 +247,17 @@ span ul li {
 }
 
 .hechizos-contenedor {
-  width: 80%;
+  display: flex;
+  justify-content: center;
 }
 
-.hechizo-item {
-  list-style: none;
-  display: block;
+.hechizo {
+  font-family: "Ubuntu", sans-serif;
   padding: 10px;
+  margin: 5px;
+  box-shadow: 5px 5px 5px #686868;
 }
-.hechizo-item:hover {
+.hechizo:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -254,6 +300,30 @@ button {
 .nav-button:active, .nav-button:hover {
   background-color: #EAD38A;
   color: #FFF;
+}
+
+.section-position {
+  position: relative;
+}
+
+.custom-shape-divider-top-1610211513 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1610211513 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 278px;
+}
+
+.custom-shape-divider-top-1610211513 .shape-fill {
+  fill: #00000000;
 }
 
 /*# sourceMappingURL=style.css.map */
