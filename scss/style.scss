@@ -41,61 +41,59 @@
         margin-top: 20px;
     }
 }
-/* .fadein {
-    animation-delay: 3s;
-    animation-duration: 5s;
-    animation-name: fadein;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes fadein {
-    from {
-        opacity: 100%;
-    }
-  
-    to {
-        opacity: 0%;
-        z-index: -2;
-   }
-  } */
 .fondo {
     background-image: url(../imagenes/intenciones-inicio.jpg);
-    background-size: 100vw;
+    background-size: 100%;
     background-attachment: fixed;
 }
+.header-section {
+    background-color: $color-background;
+    position: fixed;
+    width: 100%;
+    display: inline;
+}
+.menu {
+    color: $color-gryffindor;
+}
 .vacio {
-    height: 500px;
+    height: 31.25rem;
     width: 100%;
 }
 .fondo-superior {
     background-image: url(../imagenes/marauders_bg.jpg);
+}
+.foto-navbar {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 60px;
+    height: auto;
 }
 .imagen_central {
     height: 60px;
     display: flex;
     justify-content: center;
 }
-
 .dropdown-style {
     background-color: #dcdcdc;
-}
-.button_font {
-    font-family: $font-primary;
-}
-.buscador {
-    display: flex;
-    justify-content: end;
 }
 a, span, h1 {
     text-decoration: none;
     font-family: $font-primary;
 }
 h1 {
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
     color: #EAD38A;
     text-shadow: 1px 1px grey;
+}
+.separador {
+    width: auto;
+    height: 5px;
+    border: 5px solid $color-hogwarts-sec;
+    display: flex;
+    justify-content: center;
+    z-index: 4;
 }
 a, span {
     color: black;
@@ -205,43 +203,70 @@ h2 {
     margin: auto;
     display: flex;
 }
-.contacto {
-    margin: 0 10px;
-}
-span ul li {
-    list-style-type: square;
-    color: black;
-    margin-left: 30px;
-}
 .hechizos-contenedor {
     display: flex;
     justify-content: center;
 }
-.hechizo {
+.texto-hechizos {
     font-family: $font-secundary;
-    padding: 10px;
+    color: #dcdcdc;
+}
+.flip-card {
+    width: 18.75rem;
+    height: 18.75rem;
+    perspective: 1000px;
     margin: 5px;
-    box-shadow: 5px 5px 5px #686868;
-    &:hover {
-        @include transform(scale(1.1));
-    }
+    padding: 5px;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    background-color: $color-background;
+    display: flex;
+    align-items: center;
+}
+.flip-card-back {
+    background-color: $color-hogwarts-sec;
+    color: white;
+    transform: rotateY(180deg);
 }
 .postalesSeccion {
     margin-bottom: 20px;
 }
 .carousel-position {
     display: flex;
+    align-items: center;
+}
+.imagen-carrousel {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.video {
+    width: 30%;
+    height: 250px;
+    display: flex;
     justify-content: space-around;
+    margin: 5px;
 }
 .contactoSeccion{
     margin-bottom: 20px;
-    background-color: $color-background;
-}
-.pie {
-    margin-left: 440px;
-    font-family: $font-primary;
-    color: darkred;
-    font-size: 1.2rem;
 }
 button {
     font-family: $font-secundary;
@@ -253,6 +278,16 @@ button {
 .varitas {
     font-family: $font-primary;
 }
+.contacto {
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+}
+span ul li {
+    list-style-type: square;
+    color: black;
+    margin-left: 30px;
+}
 .nav-button:active, .nav-button:hover {
     background-color: $color-background;
     color: #FFF;
@@ -260,22 +295,108 @@ button {
 .section-position {
     position: relative;
 }
-.custom-shape-divider-top-1610211513 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+h4, h5, .colocar_nombre, .colocar_email, .colocar_telefono, .colocar_asunto, .colocar_mensaje, .texto_boton, .aviso {
+    font-family: $font-secundary;
 }
-
-.custom-shape-divider-top-1610211513 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 278px;
+.redes {
+    
 }
-
-.custom-shape-divider-top-1610211513 .shape-fill {
-    fill: #00000000;
+.formulario {
+    width: 57rem;
+}
+.contact_form{ 
+    width: 57rem; 
+    height: auto;
+    margin: 40px;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: $color-background; 
+    padding-left: 30px;
+}
+input{
+    background-color: #fbfbfb; 
+    width: 25rem; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: $color-hogwarts-sec; 
+    margin-top: 5px;  
+    padding-left: 10px;
+    margin-bottom: 5px; 
+}
+textarea{
+    background-color: #fbfbfb; 
+    width: 25rem; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: $color-hogwarts-sec; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 10px; 
+    padding-top: 15px; 
+}
+label{
+    display: block; 
+    float: center;  
+}
+.button-form{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 10px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: $color-hogwarts-sec; 
+    border-color: $color-hogwarts-sec; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 25rem;   
+    cursor: pointer;
+}
+button p{
+    color: #fff;
+    margin-top: 10px;
+}
+span{
+    color: $color-hogwarts-sec; 
+}
+.aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+}
+h4{
+    font-size: 39px;  
+    text-align: letf; 
+    padding-bottom: 20px; 
+    color: $color-hogwarts-sec;
+}
+h5{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e;   
+}
+p{
+    font-size: 14px; 
+    color: #0e0e0e; 
+}
+.formulario input:focus{
+    outline:0;
+    border: 1px solid $color-background;
+}
+.formulario textarea:focus{
+    outline:0;
+    border: 1px solid $color-background;
+}
+.footer-section {
+    display: flex;
+    justify-content: center;
+}
+.pie {
+    font-family: $font-primary;
+    color: black;
+    font-size: 1.2rem;
 }
