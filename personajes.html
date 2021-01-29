@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wizarding World</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Langar&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <!-- Metaetiquetas -->
-    <meta name="author" content="Juan Pablo Sacco">
-    <meta name="description" content="Sitio web del mundo mágico de Harry Potter.">
-    <meta name="keywords" content="harry, potter, hermione, dumbledore, rowling, voldemort, fantasticos, scamander, grindelwald, snape, magia, varitas, literatura, peliculas">
-    <!-- Metaetiquetas Opengraph -->
-    <meta property="og:locale" content="es_ES">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Wizarding World">
-    <meta property="og:descrption" content="Sitio web del mundo mágico de Harry Potter.">
-    <meta property="og:url" content="https://www.wizardingworldofhp.com">
-    <meta property="og:image" content="imagenes/WW_logo_2018">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wizarding World</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Langar&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Metaetiquetas -->
+  <meta name="author" content="Juan Pablo Sacco">
+  <meta name="description" content="Sitio web del mundo mágico de Harry Potter.">
+  <meta name="keywords"
+    content="harry, potter, hermione, dumbledore, rowling, voldemort, fantasticos, scamander, grindelwald, snape, magia, varitas, literatura, peliculas">
+  <!-- Metaetiquetas Opengraph -->
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wizarding World">
+  <meta property="og:descrption" content="Sitio web del mundo mágico de Harry Potter.">
+  <meta property="og:url" content="https://www.wizardingworldofhp.com">
+  <meta property="og:image" content="imagenes/WW_logo_2018">
 </head>
+
 <body class="fondo">
   <header class="header-section">
     <div>
       <img src="imagenes/WW_logo_2018.png" alt="Logo Wizarding World" class="foto-navbar">
     </div>
-    <nav class="navbar navbar-expand-lg"> <!-- Navbar con dropdown -->
+    <nav class="navbar navbar-expand-lg">
+      <!-- Navbar con dropdown -->
       <div class="container-fluid"></div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link menu" aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menu" href="index.html#hechizos">Hechizos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menu" href="index.html#peliculas">Peliculas</a>
-            </li>
-            <li class="nav-item dropdown"> <!-- Dropdown -->
-              <a class="nav-link dropdown-toggle menu" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Personajes
-              </a>
-              <ul class="dropdown-menu dropdown-style" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item menu submenu" href="personajes.html#v-pills-hp">Harry Potter</a></li>
-                <li><a class="dropdown-item menu submenu" href="personajes.html#v-pills-af">Animales Fantasticos</a></li>
-              </ul>
-            </li> <!-- Fin Dropdown -->
-            <li class="nav-item">
-              <a class="nav-link menu" href="#contacto" aria-disabled="true">Contacto</a>
-            </li>
-          </ul>
-        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link menu" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu" href="index.html#hechizos">Hechizos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link menu" href="index.html#peliculas">Peliculas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <!-- Dropdown -->
+            <a class="nav-link dropdown-toggle menu" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Personajes
+            </a>
+            <ul class="dropdown-menu dropdown-style" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item menu submenu" href="#harrypotter">Harry Potter</a></li>
+              <li><a class="dropdown-item menu submenu" href="#animales">Animales Fantasticos</a></li>
+            </ul>
+          </li> <!-- Fin Dropdown -->
+          <li class="nav-item">
+            <a class="nav-link menu" href="#contacto" aria-disabled="true">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex boton-busqueda">
+          <input class="form-control me-2 input-busqueda" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-secondary texto-boton" type="submit">Accio!</button>
+        </form>
+      </div>
       </div>
     </nav> <!-- Fin navbar -->
   </header>
@@ -71,482 +83,549 @@
   <div class="vacio"></div>
   <div class="fondo-superior">
     <div class="d-flex align-items-start row">
-      <div class="nav flex-column nav-pills me-3 boton-personajes col-sm-12 col-md-12 col-lg-auto col-xl-auto" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-        <a class="nav-link active boton-personajes btn-secondary" id="v-pills-hp-tab" data-bs-toggle="pill" href="#v-pills-hp" role="tab" aria-controls="v-pills-hp" aria-selected="true">Harry Potter</a>
-        <a class="nav-link boton-personajes btn-secondary" id="v-pills-af-tab" data-bs-toggle="pill" href="#v-pills-af" role="tab" aria-controls="v-pills-af" aria-selected="false">Animales Fantasticos</a>
-      </div>
-      <div class="tab-content info-personajes col-sm-12 col-md-12 col-lg-auto col-xl-auto" id="v-pills-tabContent">
-        <div class="tab-pane fade show active" id="v-pills-hp" role="tabpanel" aria-labelledby="v-pills-hp-tab">
-          <div class="row d-flex justify-content-center">
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/harrypotter.jpg" alt="Harry Potter" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Harry Potter</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
+      <div class="row d-flex justify-content-center">
+        <h2 class="titulo-personajes" id="harrypotter">Harry Potter</h2>
+        <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje gry-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/harrypotter.jpg" alt="Harry Potter" class="imagen-personajes crop">
             </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/ron.jpg" alt="Ron Weasley" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Ron Weasley</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/hermione.jpg" alt="Hermione Granger" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Hermione Granger</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/dumbledore.jpg" alt="Albus Dumbledore" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Albus Dumbledore</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/minerva.jpg" alt="Minerva Mcgonagall" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Minerva McGonagall</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/snape.jpg" alt="Severus Snape" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Severus Snape</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/voldemort.jpg" alt="Lord Voldemort - Tom Riddle" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Lord Voldemort</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/bellatrix.png" alt="Bellatrix Lestrange" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Bellatrix Lestrange</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/nagini_hp.png" alt="Nagini" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Nagini</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/umbridge.jpg" alt="Dolores Umbridge" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Dolores Umbridge</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/draco.jpg" alt="Draco Malfoy" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Draco Malfoy</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/lucius.jpg" alt="Lucius Malfoy" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Lucius Malfoy</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/narcissa.png" alt="Narcissa Malfoy" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Narcissa Malfoy</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/dobby.jpg" alt="Dobby" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Dobby</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/pettigrew.png" alt="Peter Pettigrew" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Peter Pettigrew</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/sirius.jpg" alt="Sirius Black" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Sirius Black</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/lupin.jpg" alt="Remus Lupin" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Remus Lupin</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/tonks.jpg" alt="Nymphadora Tonks" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Nymphadora Tonks</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/molly.jpg" alt="Molly Weasley" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Molly Weasley</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/arthur.jpg" alt="Arthur Weasley" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Arthur Weasley</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/ginny.jpg" alt="Ginny Weasley" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Ginny Weasley</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/luna.jpg" alt="Luna Lovegood" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Luna Lovegood</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/neville.jpg" alt="Neville Longbottom" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Neville Longbottom</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/dursley.jpg" alt="Familia Dursley" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Familia Dursley</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Harry Potter</h5>
+                <p class="card-text">Mago de sangre mestiza y único hijo de James y Lily Potter. Es la única persona
+                  conocida que ha sobrevivido a la maldición Avada Kedavra.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="v-pills-af" role="tabpanel" aria-labelledby="v-pills-af-tab">
-          <div class="row d-flex justify-content-center">
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/newt.png" alt="Newt Scamander" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Newt Scamander</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
+        <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje gry-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/ron.jpg" alt="Ron Weasley" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Ron Weasley</h5>
+                <p class="card-text">Mago sangre pura, el sexto y más joven hijo de Arthur y Molly Weasley. Mejor amigo
+                  de Harry Potter y luego de Hermione Granger.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje gry-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/hermione.jpg" alt="Hermione Granger" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Hermione Granger</h5>
+                <p class="card-text">Bruja hija de muggles. El Sr. y Sra. Granger son dentistas en el mundo muggle.
+                  Posee una mente académica brillante.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje gry-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/dumbledore.jpg" alt="Albus Dumbledore" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Albus Dumbledore</h5>
+                <p class="card-text">Mago de sangre mestiza. Famoso por derrotar a Gellert Grindelwald y su trabajo en
+                  alquimia con Nicolas Flamel.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje gry-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/minerva.jpg" alt="Minerva Mcgonagall" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Minerva McGonagall</h5>
+                <p class="card-text">Bruja y animaga registrada que asistió al Colegio Hogwarts de Magia y Hechicería y
+                  fue seleccionada para la Casa Gryffindor.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje sly-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/snape.jpg" alt="Severus Snape" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Severus Snape</h5>
+                <p class="card-text">Mago de sangre mestiza. Maestro de Pociones, profesor de Defensa Contra las Artes
+                  Oscuras y, mas tarde, director de Hogwarts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje sly-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/voldemort.jpg" alt="Lord Voldemort - Tom Riddle"
+                class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Lord Voldemort</h5>
+                <p class="card-text">Mago tenebroso más poderoso de todos los tiempos. Su nombre verdadero es Tom
+                  Sorvolo Ryddle.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje sly-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/bellatrix.png" alt="Bellatrix Lestrange" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Bellatrix Lestrange</h5>
+                <p class="card-text">Bruja de sangre pura. Mortífaga fanáticamente leal a Lord Voldemort. Asesinada por
+                  Molly Weasley en la batalla de Hogwarts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje hog-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/nagini_hp.png" alt="Nagini" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Nagini</h5>
+                <p class="card-text">Mascota, aliada y uno de los pocos seres que Lord Voldemort apreciaba,
+                  convirtiendola en Horrocrux.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje sly-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/umbridge.jpg" alt="Dolores Umbridge" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Dolores Umbridge</h5>
+                <p class="card-text">Bruja mestiza bajita, rechoncha y con cara de sapo, además de su característica voz
+                  chillona. Adoraba a los gatos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje sly-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/draco.jpg" alt="Draco Malfoy" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Draco Malfoy</h5>
+                <p class="card-text">Mago de sangre pura y el único hijo de Lucius y Narcissa Malfoy. Asistió al Colegio
+                  Hogwarts de Magia y Hechicería.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje sly-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/lucius.jpg" alt="Lucius Malfoy" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Lucius Malfoy</h5>
+                <p class="card-text">Mago de sangre pura. Hombre aristocrático, y, además, mortifago. Esposo de Narcissa
+                  Malfoy y padre de Draco.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje sly-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/narcissa.png" alt="Narcissa Malfoy" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Narcissa Malfoy</h5>
+                <p class="card-text">Bruja de sangre pura, hermana menor de Andrómeda y Bellatrix. Es esposa del
+                  mortífago Lucius Malfoy y madre de Draco.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje hog-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/dobby.jpg" alt="Dobby" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Dobby</h5>
+                <p class="card-text">Elfo Doméstico de la familia Malfoy hasta su liberación el 24 de junio de 1993.
+                  Asesinado por Bellatrix Lestrange.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje gry-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/pettigrew.png" alt="Peter Pettigrew" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Peter Pettigrew</h5>
+                <p class="card-text">Animago espía de Voldemort. Pasó 12 años viviendo en su forma animaga como la rata
+                  mascota de la Familia Weasley, Scabbers. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje gry-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/sirius.jpg" alt="Sirius Black" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Sirius Black</h5>
+                <p class="card-text">Mago de Sangre limpia. Padrino de Harry Potter. Enviado a Azkaban por doce años y
+                  luego prófugo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje gry-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/lupin.jpg" alt="Remus Lupin" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Remus Lupin</h5>
+                <p class="card-text">Uno de los mejores amigos del padre de Harry, James Potter. Sangre mestiza. En su
+                  niñez fue mordido por el Hombre lobo Fenrir Greyback.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje huf-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/tonks.jpg" alt="Nymphadora Tonks" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title text-pers">Nymphadora Tonks</h5>
+                <p class="card-text text-pers">Bruja mestiza metamorfomaga. Aurora del ministerio de magia. Esposa de
+                  Remus Lupin y madre de Teddy Lupin.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje gry-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/molly.jpg" alt="Molly Weasley" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Molly Weasley</h5>
+                <p class="card-text">Bruja de sangre pura y matriarca de la familia Weasley. Se casó con Arthur Weasley.
+                  Miembro de la Orden del Fénix.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje gry-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/arthur.jpg" alt="Arthur Weasley" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Arthur Weasley</h5>
+                <p class="card-text">Mago de sangre pura al servicio del Ministerio de Magia, así como un miembro de la
+                  Orden del Fénix reconstruida en 1995.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje gry-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/ginny.jpg" alt="Ginny Weasley" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Ginny Weasley</h5>
+                <p class="card-text">Bruja Sangre pura, la más joven de los hijos de Arthur y Molly Weasley. Se casó con
+                  Harry Potter y la pareja tuvo tres hijos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje rav-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/luna.jpg" alt="Luna Lovegood" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Luna Lovegood</h5>
+                <p class="card-text">Bruja que asistió al Colegio Hogwarts de Magia y Hechicería desde 1992 hasta 1999 y
+                  pertenece a la Casa Ravenclaw.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje gry-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/neville.jpg" alt="Neville Longbottom" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Neville Longbottom</h5>
+                <p class="card-text">Actual profesor de Herbología del Colegio Hogwarts de Magia y Hechicería, al cual
+                  asistió desde 1991.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+          class="card mb-3 tarjeta-personaje hog-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 container-personajes">
+              <img src="imagenes/personajes/dursley.jpg" alt="Familia Dursley" class="imagen-personajes crop">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Familia Dursley</h5>
+                <p class="card-text">Familia por parte materna de Harry Potter. Vivían en el número 4 de Privet Drive,
+                  en Little Whinging, Surrey.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="separador row" data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+          data-aos-duration="1000">
+          <img src="imagenes/separador.png" alt="Varita" class="foto-separador col-11 col-md-6 col-lg-5 col-xl-4">
+        </div>
+        <h2 class="titulo-personajes" id="animales">Animales Fantásticos y cómo encontrarlos</h2>
+        <div class="row d-flex justify-content-center">
+          <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+            class="card mb-3 tarjeta-personaje huf-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 container-personajes">
+                <img src="imagenes/personajes/newt.png" alt="Newt Scamander" class="imagen-personajes crop">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title text-pers">Newt Scamander</h5>
+                  <p class="card-text text-pers">Famoso Magizoologista y autor de Animales fantásticos y dónde
+                    encontrarlos.</p>
                 </div>
               </div>
             </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/jacob.png" alt="Jacob Kowalski" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Jacob Kowalski</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
+          </div>
+          <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+            class="card mb-3 tarjeta-personaje hog-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 container-personajes">
+                <img src="imagenes/personajes/jacob.png" alt="Jacob Kowalski" class="imagen-personajes crop">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Jacob Kowalski</h5>
+                  <p class="card-text">No-maj estadounidense de origen polaco, que vivió en 435 Rivington Street, Nueva
+                    York, durante la década de 1920.</p>
                 </div>
               </div>
             </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/tina.png" alt="Propertina Goldstein" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Propertina Goldstein</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
+          </div>
+          <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+            class="card mb-3 tarjeta-personaje hog-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 container-personajes">
+                <img src="imagenes/personajes/tina.png" alt="Propertina Goldstein" class="imagen-personajes crop">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Propertina Goldstein</h5>
+                  <p class="card-text">Bruja estadounidense de sangre mestiza, esposa del ex-empleado del Ministerio
+                    británico de Magia, Newt Scamander.</p>
                 </div>
               </div>
             </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/queenie.jpg" alt="Queenie Goldstein" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Queenie Goldstein</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
+          </div>
+          <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+            class="card mb-3 tarjeta-personaje hog-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 container-personajes">
+                <img src="imagenes/personajes/queenie.jpg" alt="Queenie Goldstein" class="imagen-personajes crop">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Queenie Goldstein</h5>
+                  <p class="card-text">Bruja estadounidense de sangre mestiza y la hermana menor de Tina Goldstein.</p>
                 </div>
               </div>
             </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/grindelwald.jpg" alt="Gellert Grindelwald" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Gellert Grindelwald</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
+          </div>
+          <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+            class="card mb-3 tarjeta-personaje hog-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 container-personajes">
+                <img src="imagenes/personajes/grindelwald.jpg" alt="Gellert Grindelwald" class="imagen-personajes crop">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Gellert Grindelwald</h5>
+                  <p class="card-text">Mago inglés-búlgaro de sangre pura y el más oscuro y peligroso Mago Tenebroso
+                    conocido.</p>
                 </div>
               </div>
             </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/nagini_af.jpg" alt="Nagini" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Nagini</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
+          </div>
+          <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+            class="card mb-3 tarjeta-personaje hog-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 container-personajes">
+                <img src="imagenes/personajes/nagini_af.jpg" alt="Nagini" class="imagen-personajes crop">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Nagini</h5>
+                  <p class="card-text">Humana Maledictus con una maldición sanguínea que terminaría convirtiéndole en
+                    una serpiente gigante.</p>
                 </div>
               </div>
             </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/picquery.png" alt="Seraphina Picquery" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Seraphina Picquery</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
+          </div>
+          <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+            class="card mb-3 tarjeta-personaje hog-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 container-personajes">
+                <img src="imagenes/personajes/picquery.png" alt="Seraphina Picquery" class="imagen-personajes crop">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Seraphina Picquery</h5>
+                  <p class="card-text">Bruja estadounidense que sirvió como Presidenta del MACUSA entre 1920 y 1928.</p>
                 </div>
               </div>
             </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/dumbledore_af.jpg" alt="Albus Dumbledore" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Albus Dumbledore</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
+          </div>
+          <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+            class="card mb-3 tarjeta-personaje gry-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 container-personajes">
+                <img src="imagenes/personajes/dumbledore_af.jpg" alt="Albus Dumbledore" class="imagen-personajes crop">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Albus Dumbledore</h5>
+                  <p class="card-text">Profesor de Transformaciones y más tarde director del Colegio Hogwarts de Magia y
+                    Hechicería.</p>
                 </div>
               </div>
             </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/theseus.jpg" alt="Theseus Scamander" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Theseus Scamander</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
+          </div>
+          <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+            class="card mb-3 tarjeta-personaje huf-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 container-personajes">
+                <img src="imagenes/personajes/theseus.jpg" alt="Theseus Scamander" class="imagen-personajes crop">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title text-pers">Theseus Scamander</h5>
+                  <p class="card-text text-pers">Auror del Ministerio de Magia británico, y el hermano mayor del famoso
+                    magizoologista Newton Scamander.</p>
                 </div>
               </div>
             </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/leta.jpg" alt="Leta Lestrange" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Leta Lestrange</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
+          </div>
+          <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+            class="card mb-3 tarjeta-personaje sly-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 container-personajes">
+                <img src="imagenes/personajes/leta.jpg" alt="Leta Lestrange" class="imagen-personajes crop">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Leta Lestrange</h5>
+                  <p class="card-text">Bruja de sangre pura nacida en la supremacista familia de sangre pura Lestrange.
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/credence.jpg" alt="Credence Barebone" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Credence Barebone</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
+          </div>
+          <div data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+            class="card mb-3 tarjeta-personaje hog-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 container-personajes">
+                <img src="imagenes/personajes/credence.jpg" alt="Credence Barebone" class="imagen-personajes crop">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Credence Barebone</h5>
+                  <p class="card-text">Mago estadounidense que vivió en el siglo XX. Hijo adoptivo de Mary Lou Barebone.
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="card mb-3 tarjeta-personaje col-6 col-sm-12 col-md-12" style="max-width: 540px;">
-              <div class="row g-0">
-                <div class="col-md-4 container-personajes">
-                  <img src="imagenes/personajes/marylou.jpg" alt="Mary Lou Barebone" class="imagen-personajes crop">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Mary Lou Barebone</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
+          </div>
+          <div data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+            class="card mb-3 tarjeta-personaje hog-pers col-6 col-sm-12 col-md-12" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 container-personajes">
+                <img src="imagenes/personajes/marylou.jpg" alt="Mary Lou Barebone" class="imagen-personajes crop">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Mary Lou Barebone</h5>
+                  <p class="card-text">No-Maj estadounidense que vivió en el siglo XX. Líder de la Nueva Sociedad
+                    Filantrópica de Salem.</p>
                 </div>
               </div>
             </div>
@@ -555,21 +634,25 @@
       </div>
     </div>
     <section class="footer-section section-position">
-    <footer class="pie">
-      <div class="contenedor-iconos">
-        <a href="https://www.instagram.com" class="icono"><img src="imagenes/instagram.svg" alt="Link a Instagram"></a>
-        <a href="https://www.facebook.com" class="icono"><img src="imagenes/facebook.svg" alt="Link a Facebook"></a>
-        <a href="https://www.twitter.com" class="icono"><img src="imagenes/gorjeo.svg" alt="Link a Twitter"></a>
-        <a href="https://www.youtube.com" class="icono"><img src="imagenes/youtube.svg" alt="Link a Youtube"></a>
-      </div>
+      <footer class="pie">
+        <div class="contenedor-iconos">
+          <a href="https://www.instagram.com" class="icono"><img src="imagenes/instagram.svg"
+              alt="Link a Instagram"></a>
+          <a href="https://www.facebook.com" class="icono"><img src="imagenes/facebook.svg" alt="Link a Facebook"></a>
+          <a href="https://www.twitter.com" class="icono"><img src="imagenes/gorjeo.svg" alt="Link a Twitter"></a>
+          <a href="https://www.youtube.com" class="icono"><img src="imagenes/youtube.svg" alt="Link a Youtube"></a>
+        </div>
         <h6 class="texto-footer">Creado con magia por Juan Pablo Sacco</h6>
-    </footer>
+      </footer>
     </section>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-  AOS.init();
+    AOS.init();
   </script>
 </body>
+
 </html>

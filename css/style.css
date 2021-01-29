@@ -3,12 +3,17 @@
   padding: 0;
   box-sizing: border-box;
   color: whitesmoke;
+  font-family: "Ubuntu", sans-serif;
 }
 
 @media only screen and (max-width: 720px) {
+  * {
+    overflow-x: hidden;
+  }
+
   .imagenInicio1, .imagenInicio2, .imagenInicio3, .imagenInicio4, .imagenInicio5 {
     display: block;
-    height: 40px;
+    height: 30px;
   }
 
   .casa:hover {
@@ -31,10 +36,6 @@
     width: 10rem;
   }
 
-  .separador img {
-    height: 3rem;
-  }
-
   .container-form {
     width: 90%;
   }
@@ -46,8 +47,27 @@
   .tarjeta-personaje {
     width: 90%;
   }
+
+  .flip-card-back h3, .flip-card-back p {
+    margin: 2rem 0.5rem 0 0.5rem;
+  }
+  .flip-card-back h3 {
+    font-size: 0.8rem;
+  }
+  .flip-card-back p {
+    font-size: 0.5rem;
+  }
+
+  .contenedor-iconos {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media only screen and (min-width: 721px) and (max-width: 960px) {
+  * {
+    overflow-x: hidden;
+  }
+
   .imagenInicio1, .imagenInicio2, .imagenInicio3, .imagenInicio4, .imagenInicio5 {
     display: block;
     height: 130px;
@@ -73,16 +93,27 @@
     width: 10rem;
   }
 
-  .separador img {
-    height: 6rem;
-  }
-
   .container-form {
     width: 90%;
   }
 
   .contenedor-carousel {
     width: 90%;
+  }
+
+  .flip-card-back h3, .flip-card-back p {
+    margin: 2rem 0.5rem 0 0.5rem;
+  }
+  .flip-card-back h3 {
+    font-size: 0.8rem;
+  }
+  .flip-card-back p {
+    font-size: 0.5rem;
+  }
+
+  .contenedor-iconos {
+    display: flex;
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 961px) and (max-width: 1140px) {
@@ -112,16 +143,27 @@
     width: 20rem;
   }
 
-  .separador img {
-    height: 8rem;
-  }
-
   .container-form {
     width: 45%;
   }
 
   .contenedor-carousel {
     width: 45%;
+  }
+
+  .flip-card-back h3, .flip-card-back p {
+    margin: 4rem 0.5rem 0 0.5rem;
+  }
+  .flip-card-back h3 {
+    font-size: 1.4rem;
+  }
+  .flip-card-back p {
+    font-size: 1rem;
+  }
+
+  .contenedor-iconos {
+    display: flex;
+    justify-content: right;
   }
 }
 @media only screen and (min-width: 1141px) {
@@ -151,16 +193,27 @@
     width: 20rem;
   }
 
-  .separador img {
-    height: 8rem;
-  }
-
   .container-form {
     width: 45%;
   }
 
   .contenedor-carousel {
     width: 45%;
+  }
+
+  .flip-card-back h3, .flip-card-back p {
+    margin: 4rem 0.5rem 0 0.5rem;
+  }
+  .flip-card-back h3 {
+    font-size: 1.4rem;
+  }
+  .flip-card-back p {
+    font-size: 1rem;
+  }
+
+  .contenedor-iconos {
+    display: flex;
+    justify-content: right;
   }
 }
 .fondo {
@@ -177,14 +230,43 @@
 }
 
 .menu {
-  color: black;
+  color: whitesmoke;
 }
 .menu:hover {
-  color: whitesmoke !important;
+  color: #FFDB00 !important;
 }
 
+.container-submenu {
+  background-color: #403E3E !important;
+  border: none;
+}
+
+.submenu {
+  color: whitesmoke;
+  background-color: #403E3E;
+}
 .submenu:hover {
+  color: #FFDB00;
   background-color: black;
+}
+
+.boton-busqueda {
+  margin-right: 30px;
+  margin-left: 10px;
+}
+.boton-busqueda .texto-boton {
+  text-align: center;
+  height: 40px;
+  margin-top: 5px;
+  background-color: #740001;
+}
+.boton-busqueda .input-busqueda:focus {
+  border-color: black;
+  box-shadow: 3px 3px 3px black;
+}
+
+.navbar-collapse {
+  margin-left: 5px;
 }
 
 .fondo-superior {
@@ -195,14 +277,8 @@
   position: absolute;
   top: 5px;
   left: 10px;
-  width: 60px;
+  width: 65px;
   height: auto;
-}
-
-.imagen_central {
-  height: 60px;
-  display: flex;
-  justify-content: center;
 }
 
 .dropdown-style {
@@ -217,17 +293,19 @@ a, span, h1 {
 h1 {
   font-size: 2rem;
   text-align: center;
-  color: #EAD38A;
+  color: black;
   text-shadow: 1px 1px black;
 }
 
 .separador {
   display: flex;
   justify-content: center;
+  padding: 20px 0;
 }
-.separador img {
-  width: auto;
-  filter: blur(1px);
+
+.foto-separador {
+  display: block;
+  height: auto;
 }
 
 a, span {
@@ -235,14 +313,7 @@ a, span {
 }
 
 .inicio-container {
-  display: flex;
   margin-bottom: 20px;
-  justify-content: space-around;
-}
-
-.casas {
-  text-align: center;
-  margin: 0 10px;
 }
 
 .casa1:hover {
@@ -263,6 +334,7 @@ h2 {
 
 .pestanas {
   border-bottom: none !important;
+  padding-left: 12px;
 }
 
 .pestana1, .texto1 {
@@ -347,15 +419,8 @@ h2 {
   opacity: 1;
 }
 
-.lookBook {
+.peliculas, .hechizos {
   text-align: center;
-}
-
-.imagen {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
 }
 
 .look-container {
@@ -370,14 +435,6 @@ h2 {
 
 .hechizo {
   background-color: #565656;
-  color: whitesmoke;
-}
-
-.texto-hechizos {
-  font-family: "Ubuntu", sans-serif;
-}
-
-.flip-card-back p {
   color: whitesmoke;
 }
 
@@ -420,16 +477,19 @@ h2 {
   color: whitesmoke;
   transform: rotateY(180deg);
 }
+.flip-card-back p, .flip-card-back h3 {
+  color: whitesmoke;
+}
 
 .postalesSeccion {
   margin-bottom: 20px;
 }
 
 .container-tabla {
-  display: flex;
-  justify-content: center;
   width: 90%;
   margin: 10px auto;
+  display: flex;
+  justify-content: center;
 }
 
 .imagen-poster {
@@ -451,6 +511,11 @@ td p {
 
 .boton-trailer {
   margin: 5px auto;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.modal-cuerpo {
+  background-color: black;
 }
 
 .video {
@@ -461,29 +526,15 @@ td p {
   margin: 5px;
 }
 
-button {
-  font-family: "Ubuntu", sans-serif;
-}
-
 .item {
   display: block;
   height: 200px;
-}
-
-.varitas {
-  font-family: "Langar", cursive;
 }
 
 .contacto {
   margin: 0 10px;
   display: flex;
   justify-content: center;
-}
-
-span ul li {
-  list-style-type: square;
-  color: black;
-  margin-left: 30px;
 }
 
 .nav-button:active, .nav-button:hover {
@@ -515,10 +566,6 @@ span ul li {
   margin: 20px;
 }
 
-.colocar_nombre, .colocar_email, .colocar_telefono, .colocar_asunto, .colocar_mensaje, .texto_boton, .aviso {
-  font-family: "Ubuntu", sans-serif;
-}
-
 input {
   background-color: #fbfbfb;
   width: 17rem;
@@ -547,23 +594,37 @@ span {
   color: #0e0e0e;
 }
 
-.boton-personajes {
-  color: whitesmoke;
+.titulo-personajes {
+  margin-top: 20px;
+  text-align: center;
 }
-.boton-personajes:hover {
-  background-color: black;
-  color: whitesmoke;
+
+.gry-pers:hover {
+  background-color: #740001;
 }
-.boton-personajes:active {
-  background-color: #565656 !important;
+
+.sly-pers:hover {
+  background-color: #1A472A;
+}
+
+.rav-pers:hover {
+  background-color: #0E1A40;
+}
+
+.huf-pers:hover {
+  background-color: #FFDB00;
+}
+.huf-pers:hover .text-pers {
+  color: black;
+}
+
+.hog-pers:hover {
+  background-color: #403E3E;
 }
 
 .tarjeta-personaje {
   background-color: black;
   margin: 10px;
-}
-.tarjeta-personaje:hover {
-  background: none;
 }
 
 .imagen-personajes {
@@ -599,14 +660,8 @@ span {
   font-family: "Langar", cursive;
   background-color: #403E3E;
   color: black;
-  height: 4rem;
   font-size: 1.2rem;
   width: 100%;
-}
-
-.contenedor-iconos {
-  display: flex;
-  justify-content: right;
 }
 
 .icono {
@@ -617,9 +672,8 @@ span {
 
 .texto-footer {
   text-align: end;
-  position: relative;
-  bottom: 30px;
-  right: 10px;
+  font-size: 1rem;
+  margin-top: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

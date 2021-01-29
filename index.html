@@ -1,829 +1,1137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wizarding World</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Langar&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <!-- Metaetiquetas -->
-    <meta name="author" content="Juan Pablo Sacco">
-    <meta name="description" content="Sitio web del mundo mágico de Harry Potter.">
-    <meta name="keywords" content="harry, potter, hermione, dumbledore, rowling, voldemort, fantasticos, scamander, grindelwald, snape, magia, varitas, literatura, peliculas">
-    <!-- Metaetiquetas Opengraph -->
-    <meta property="og:locale" content="es_ES">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Wizarding World">
-    <meta property="og:descrption" content="Sitio web del mundo mágico de Harry Potter.">
-    <meta property="og:url" content="https://www.wizardingworldofhp.com">
-    <meta property="og:image" content="imagenes/WW_logo_2018">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wizarding World</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Langar&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <!-- Favicon -->
+  <link rel="icon" href="/imagenes/favicon.ico" sizes="32x32" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="imagenes/apple-touch-icon.png">
+  <link rel="manifest" href="imagenes/site.webmanifest">
+  <link rel="mask-icon" href="imagenes/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Metaetiquetas -->
+  <meta name="author" content="Juan Pablo Sacco">
+  <meta name="description" content="Sitio web del mundo mágico de Harry Potter.">
+  <meta name="keywords"
+    content="harry, potter, hermione, dumbledore, rowling, voldemort, fantasticos, scamander, grindelwald, snape, magia, varitas, literatura, peliculas">
+  <!-- Metaetiquetas Opengraph -->
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wizarding World">
+  <meta property="og:descrption" content="Sitio web del mundo mágico de Harry Potter.">
+  <meta property="og:url" content="https://www.wizardingworldofhp.com">
+  <meta property="og:image" content="imagenes/WW_logo_2018">
 </head>
+
 <body class="fondo">
-    <header class="header-section">
-        <div><img src="imagenes/WW_logo_2018.png" alt="Logo Wizarding World" class="foto-navbar"></div>
-          <nav class="navbar navbar-expand-lg"> <!-- Navbar con dropdown -->
-            <div class="container-fluid"></div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link menu" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link menu" href="#hechizos">Hechizos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link menu" href="#peliculas">Peliculas</a>
-                  </li>
-                  <li class="nav-item dropdown"> <!-- Dropdown -->
-                    <a class="nav-link dropdown-toggle menu" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Personajes
-                    </a>
-                    <ul class="dropdown-menu dropdown-style" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item menu submenu" href="personajes.html#v-pills-hp">Harry Potter</a></li>
-                      <li><a class="dropdown-item menu submenu" href="personajes.html#v-pills-af">Animales Fantasticos</a></li>
-                    </ul>
-                  </li> <!-- Fin Dropdown -->
-                  <li class="nav-item">
-                    <a class="nav-link menu" href="#contacto" aria-disabled="true">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav> <!-- Fin navbar -->
-    </header>
-    <h1>Wizarding World</h1>
-    <div class="vacio"></div>
-    <section class="row section-position contenedor-pestanas"> <!-- NavTab de casas -->
-        <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
-          <li class="nav-item col-2 container-pestana" role="presentation">
-            <div class="imagen1 d-flex justify-content-center">
-              <a class="nav-link pestana1" id="gry-tab" data-bs-toggle="tab" href="#Gryffindor" role="tab" aria-controls="Gryffindor" aria-selected="true">
-                <img src="imagenes/Gryffindor_Pottermore.png" alt="Gryffindor" class="imagenInicio1 casa1">
-              </a>
-            </div>
+  <header class="header-section">
+    <div><img src="imagenes/WW_logo_2018.png" alt="Logo Wizarding World" class="foto-navbar"></div>
+    <nav class="navbar navbar-expand-lg">
+      <!-- Navbar con dropdown -->
+      <div class="container-fluid"></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link menu" aria-current="page" href="index.html">Inicio</a>
           </li>
-          <li class="nav-item col-2 container-pestana" role="presentation">
-            <div class="imagen2 d-flex justify-content-center">
-              <a class="nav-link pestana2" id="sly-tab" data-bs-toggle="tab" href="#Slytherin" role="tab" aria-controls="Slytherin" aria-selected="false">
-                <img src="imagenes/Slytherin_Pottermore.png" alt="Slytherin" class="imagenInicio2 casa1">
-              </a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link menu" href="#hechizos">Hechizos</a>
           </li>
-          <li class="nav-item col-2 container-pestana" role="presentation">
-            <div class="imagen3 d-flex justify-content-center">
-              <a class="nav-link pestana5" id="hog-tab" data-bs-toggle="tab" href="#Hogwarts" role="tab" aria-controls="Hogwarts" aria-selected="false">
-                <img src="imagenes/Hogwarts_Pottermore.png" alt="Hogwarts" class="imagenInicio3 casa">
-              </a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link menu" href="#peliculas">Peliculas</a>
           </li>
-          <li class="nav-item col-2 container-pestana" role="presentation">
-            <div class="imagen4 d-flex justify-content-center">
-              <a class="nav-link pestana3" id="huf-tab" data-bs-toggle="tab" href="#Hufflepuff" role="tab" aria-controls="Hufflepuff" aria-selected="false">
-                <img src="imagenes/Hufflepuff_Pottermore.png" alt="Hufflepuff" class="imagenInicio4 casa2">
-              </a>
-            </div>
-          </li>
-          <li class="nav-item col-2 container-pestana" role="presentation">
-            <div class="imagen5 d-flex justify-content-center">
-              <a class="nav-link pestana4" id="rav-tab" data-bs-toggle="tab" href="#Ravenclaw" role="tab" aria-controls="Ravenclaw" aria-selected="false">
-                <img src="imagenes/Ravenclaw_Pottermore.png" alt="Ravenclaw" class="imagenInicio5 casa2">
-              </a>
-            </div>
+          <li class="nav-item dropdown menu-dropdown">
+            <!-- Dropdown -->
+            <a class="nav-link dropdown-toggle menu" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Personajes
+            </a>
+            <ul class="dropdown-menu dropdown-style container-submenu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item submenu" href="personajes.html#harrypotter">Harry Potter</a></li>
+              <li><a class="dropdown-item submenu" href="personajes.html#animales">Animales Fantasticos</a></li>
+            </ul>
+          </li> <!-- Fin Dropdown -->
+          <li class="nav-item">
+            <a class="nav-link menu" href="#contacto" aria-disabled="true">Contacto</a>
           </li>
         </ul>
-      <div class="tab-content" id="myTabContent">
-          <div class="tab-pane texto1" id="Gryffindor" role="tabpanel" aria-labelledby="gry-tab"> <!-- Pestaña Gryffindor -->
+        <form class="d-flex boton-busqueda">
+          <input class="form-control me-2 input-busqueda" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-secondary texto-boton" type="submit">Accio!</button>
+        </form>
+      </div>
+      </div>
+    </nav> <!-- Fin navbar -->
+  </header>
+  <div class="container-fluid">
+    <h1>Wizarding World</h1>
+    <div class="vacio"></div>
+    <section class="section-position section-pestanas">
+      <!-- NavTab de casas -->
+      <div class="row">
+        <ul class="nav nav-tabs nav-fill pestanas" id="myTab" role="tablist">
+          <li class="nav-item col-2 container-pestana" role="presentation">
+            <a class="nav-link pestana1" id="gryffindor-tab" data-bs-toggle="tab" href="#gryffindor" role="tab"
+              aria-controls="gryffindor" aria-selected="true">
+              <div class="d-flex justify-content-center">
+                <img src="imagenes/Gryffindor_Pottermore.png" alt="Gryffindor" class="imagenInicio1 casa1">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item col-2 container-pestana" role="presentation">
+            <a class="nav-link pestana2" id="slytherin-tab" data-bs-toggle="tab" href="#slytherin" role="tab"
+              aria-controls="slytherin" aria-selected="false">
+              <div class="d-flex justify-content-center">
+                <img src="imagenes/Slytherin_Pottermore.png" alt="Slytherin" class="imagenInicio2 casa1">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item col-2 container-pestana" role="presentation">
+            <a class="nav-link pestana5" id="hogwarts-tab" data-bs-toggle="tab" href="#hogwarts" role="tab"
+              aria-controls="hogwarts" aria-selected="false">
+              <div class="d-flex justify-content-center">
+                <img src="imagenes/Hogwarts_Pottermore.png" alt="Hogwarts" class="imagenInicio3 casa">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item col-2 container-pestana" role="presentation">
+            <a class="nav-link pestana3" id="hufflepuff-tab" data-bs-toggle="tab" href="#hufflepuff" role="tab"
+              aria-controls="hufflepuff" aria-selected="false">
+              <div class="d-flex justify-content-center">
+                <img src="imagenes/Hufflepuff_Pottermore.png" alt="Hufflepuff" class="imagenInicio4 casa2">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item col-2 container-pestana" role="presentation">
+            <a class="nav-link pestana4" id="ravenclaw-tab" data-bs-toggle="tab" href="#ravenclaw" role="tab"
+              aria-controls="ravenclaw" aria-selected="false">
+              <div class="d-flex justify-content-center">
+                <img src="imagenes/Ravenclaw_Pottermore.png" alt="Ravenclaw" class="imagenInicio5 casa2">
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade texto1" id="gryffindor" role="tabpanel" aria-labelledby="gryffindor-tab">
+            <!-- Pestaña Gryffindor -->
             <div class="row contenedor-tarjetas">
               <div class="card col-3 col-sm-6 tarjeta gry-sec">
                 <div class="contenedor-texto-tarjeta">
                   <div class="texto-tarjeta">
-                    Gryffindor fue fundada por Godric Gryffindor, un gran mago honorable y valiente nacido en Godric's Hollow, el mismo pueblo que Harry y Albus Dumbledore.
-                    Godric Gryffindor solo acogía a los magos valientes y honorables, ya que eso era lo que el fundador más apreciaba.
+                    Gryffindor fue fundada por Godric Gryffindor, un gran mago honorable y valiente nacido en Godric's
+                    Hollow, el mismo pueblo que Harry y Albus Dumbledore.
+                    Godric Gryffindor solo acogía a los magos valientes y honorables, ya que eso era lo que el fundador
+                    más apreciaba.
                   </div>
-                  <img src="imagenes/GodricGriffindor.jpg" class="card-img-top imagen-tarjeta" alt="Godric Gryffindor - Fundador de la casa Gryffindor">
+                  <img src="imagenes/GodricGriffindor.jpg" class="card-img-top imagen-tarjeta"
+                    alt="Godric Gryffindor - Fundador de la casa Gryffindor">
                   <div class="card-body">
                     <h5 class="card-title">Godric Gryffindor</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Godric Gryffindor fue un mago que vivió en la época medieval y uno de los
+                      cuatro fundadores del Colegio Hogwarts de Magia y Hechicería.</p>
                   </div>
                 </div>
               </div>
               <div class="card col-3 col-sm-6 tarjeta gry-sec">
                 <div class="contenedor-texto-tarjeta">
                   <div class="texto-tarjeta">
-                    La Torre de Gryffindor, o torre este, en el séptimo piso del castillo. A un lado de la torre oeste, o torre de Ravenclaw.
+                    La Torre de Gryffindor se encuentra detrás del retrato de la Dama Gorda del séptimo piso. Para
+                    entrar hay que decirle una contraseña al retrato, y éste se moverá a un lado. Detrás hay un agujero
+                    circular que lleva a la sala común de Gryffindor. Hay una ventana que mira a los terrenos de la
+                    escuela y una gran chimenea que ocupa gran parte de una pared.
                   </div>
-                  <img src="imagenes/PM_Sala_comun_de_Gryffindor.jpg" class="card-img-top imagen-tarjeta" alt="Sala común de Gryffindor">
+                  <img src="imagenes/PM_Sala_comun_de_Gryffindor.jpg" class="card-img-top imagen-tarjeta"
+                    alt="Sala común de Gryffindor">
                   <div class="card-body">
                     <h5 class="card-title">Sala común de Gryffindor</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+                    <p class="card-text">La sala común de Gryffindor sirve como una sala común para la casa Gryffindor
+                      en el Colegio Hogwarts de Magia y Hechicería.</p>
                   </div>
                 </div>
               </div>
               <div class="card col-3 col-sm-6 tarjeta gry-sec">
                 <div class="contenedor-texto-tarjeta">
                   <div class="texto-tarjeta">
-                    Reliquia más preciada: su espada (perteneció a Godric Gryffindor), aunque también está el Sombrero Seleccionador, que es el sombrero de Godric Gryffindor.
+                    La espada de Godric Gryffindor fue forjada hace mil años por duendes, los herreros más hábiles del
+                    mundo mágico, y como todas sus creaciones, está encantada. Compuesta de plata pura, tiene
+                    incrustaciones de rubíes. El nombre de Godric Gryffindor está grabado justo debajo de la empuñadura.
                   </div>
-                  <img src="imagenes/espadagry.jpg" class="card-img-top imagen-tarjeta" alt="Reliquia de Gryffindor - Espada de Godric Gryffindor">
+                  <img src="imagenes/espadagry.jpg" class="card-img-top imagen-tarjeta"
+                    alt="Reliquia de Gryffindor - Espada de Godric Gryffindor">
                   <div class="card-body">
                     <h5 class="card-title">Espada de Godric Gryffindor</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">La Espada de Godric Gryffindor es un objeto hecho por duendes y propiedad del
+                      famoso mago Godric Gryffindor, uno de los cuatro fundadores del Colegio Hogwarts de Magia y
+                      Hechicería.</p>
                   </div>
                 </div>
               </div>
               <div class="card col-3 col-sm-6 tarjeta gry-sec">
                 <div class="contenedor-texto-tarjeta">
                   <div class="texto-tarjeta">
-                    Minerva McGonagall.
+                    Minerva McGonagall es una bruja y una animaga registrada que asistió al Colegio Hogwarts de Magia y
+                    Hechicería entre 1947 y 1954 y fue seleccionada para la Casa Gryffindor. Después de sus estudios,
+                    trabajó durante dos años en el Ministerio de Magia y más tarde regresó a Hogwarts, donde se
+                    convirtió en Jefa de la Casa Gryffindor, profesora de Transformaciones y al mismo tiempo,
+                    subdirectora.
                   </div>
-                  <img src="imagenes/Minerva_after_battle.jpg" class="card-img-top imagen-tarjeta" alt="Jefa de casa - Minerva McGonagall">
+                  <img src="imagenes/Minerva_after_battle.jpg" class="card-img-top imagen-tarjeta"
+                    alt="Jefa de casa - Minerva McGonagall">
                   <div class="card-body">
                     <h5 class="card-title">Minerva McGonagall</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Minerva McGonagall es subdirectora, jefa de la casa de Gryffindor, profesora de
+                      transformaciones,​ y más tarde directora en Hogwarts.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div> <!-- Fin Pestaña Gryffindor -->
-        <div class="tab-pane texto2" id="Slytherin" role="tabpanel" aria-labelledby="sly-tab"> <!-- Pestaña Slytherin -->
-          <div class="row contenedor-tarjetas">
-            <div class="card col-3 tarjeta sly-sec">
-              <div class="contenedor-texto-tarjeta">
-                <div class="texto-tarjeta">
-                  Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+          <div class="tab-pane fade texto2" id="slytherin" role="tabpanel" aria-labelledby="slytherin-tab">
+            <!-- Pestaña Slytherin -->
+            <div class="row contenedor-tarjetas">
+              <div class="card col-3 tarjeta sly-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    Salazar Slytherin fue un popular mago oscuro de sangre pura en la edad media. Dominaba la lengua
+                    pársel y en el uso de la Legremancia era extremadamente bueno. Fue uno de los cuatro fundadores de
+                    Hogwarts y aunque sorprenda, era el mejor amigo de Godric Gryffindor. También es un antepasado del
+                    poderoso y temible Lord voldelmort.
+                  </div>
+                  <img src="imagenes/Salazarslytherin.jpg" class="card-img-top imagen-tarjeta"
+                    alt="Salazar Slytherin - Fundador de la casa Slytherin">
+                  <div class="card-body">
+                    <h5 class="card-title">Salazar Slytherin</h5>
+                    <p class="card-text">Salazar Slytherin es un famoso mago de sangre pura de la Edad Media. Es uno de
+                      los cuatro fundadores del Colegio Hogwarts de Magia y Hechicería.</p>
+                  </div>
                 </div>
-                <img src="imagenes/Salazarslytherin.jpg" class="card-img-top imagen-tarjeta" alt="Salazar Slytherin - Fundador de la casa Slytherin">
-                <div class="card-body">
-                  <h5 class="card-title">Salazar Slytherin</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <div class="card col-3 tarjeta sly-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    La sala común de Slytherin es una sala común para la casa Slytherin situada en las mazmorras. En
+                    general, luce varios tonos de verde y la campana de la chimenea está adornada con el emblema de una
+                    serpiente.
+                  </div>
+                  <img src="imagenes/PM_Sala_comun_de_Slytherin.jpg" class="card-img-top imagen-tarjeta"
+                    alt="Sala común de Slytherin">
+                  <div class="card-body">
+                    <h5 class="card-title">Sala común de Slytherin</h5>
+                    <p class="card-text">La Mazmorra de Slytherin, también conocidas como la sala común de Slytherin, es
+                      el espacio reservado para los estudiantes de la Casa Slytherin en el Colegio Hogwarts de Magia y
+                      Hechicería. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-3 tarjeta sly-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    El guardapelo de Salazar Slytherin era el tercer Horrocrux que Lord Voldemort seleccionó por dos
+                    razones: tenia un gran valor ya que le perteneció al mismísimo Salazar Slytherin y porque él pensaba
+                    que le pertenecía ya que el guardapelo y el anillo estuvieron en su familia por generaciones.
+                  </div>
+                  <img src="imagenes/guardapelosly.jpg" class="card-img-top imagen-tarjeta"
+                    alt="Reliquia de Slytherin - Guardapelo de Salazar Slytherin">
+                  <div class="card-body">
+                    <h5 class="card-title">Guardapelo de Salazar Slytherin</h5>
+                    <p class="card-text">El guardapelo fue una creación de Salazar Slytherin, el célebre fundador de la
+                      Casa Slytherin en el Colegio Hogwarts de Magia y Hechicería.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-3 tarjeta sly-sec">
+                <div class="contenedor-texto-tarjeta">
+                  <div class="texto-tarjeta">
+                    El Profesor Severus Snape fue Maestro de Pociones (1981-1996), profesor de Defensa Contra las Artes
+                    Oscuras (1996-1997) y director (1997-1998) de Hogwarts, a la que asistió como estudiante desde 1971
+                    hasta 1978. Snape desempeñó un papel esencial en las dos guerras contra Lord Voldemort.
+                  </div>
+                  <img src="imagenes/SeverusSnape.jpg" class="card-img-top imagen-tarjeta"
+                    alt="Jefe de casa - Severus Snape">
+                  <div class="card-body">
+                    <h5 class="card-title">Severus Snape</h5>
+                    <p class="card-text">Severus Snape es el profesor de Pociones en el Colegio Hogwarts de Magia y
+                      Hechicería. También es jefe de la casa Slytherin. </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card col-3 tarjeta sly-sec">
-              <div class="contenedor-texto-tarjeta">
-                <div class="texto-tarjeta">
-                  Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
-                </div>
-                <img src="imagenes/PM_Sala_comun_de_Slytherin.jpg" class="card-img-top imagen-tarjeta" alt="Sala común de Slytherin">
-                <div class="card-body">
-                  <h5 class="card-title">Sala común de Slytherin</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
-                </div>
-              </div>
-            </div>
-            <div class="card col-3 tarjeta sly-sec">
-              <div class="contenedor-texto-tarjeta">
-                <div class="texto-tarjeta">
-                  Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
-                </div>
-                <img src="imagenes/guardapelosly.jpg" class="card-img-top imagen-tarjeta" alt="Reliquia de Slytherin - Guardapelo de Salazar Slytherin">
-                <div class="card-body">
-                  <h5 class="card-title">Guardapelo de Salazar Slytherin</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="card col-3 tarjeta sly-sec">
-              <div class="contenedor-texto-tarjeta">
-                <div class="texto-tarjeta">
-                  Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
-                </div>
-                <img src="imagenes/SeverusSnape.jpg" class="card-img-top imagen-tarjeta" alt="Jefe de casa - Severus Snape">
-                <div class="card-body">
-                  <h5 class="card-title">Severus Snape</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- Fin Pestaña Slytherin -->
-          <div class="tab-pane fade active show texto5" id="Hogwarts" role="tabpanel" aria-labelledby="hog-tab"> <!-- Pestaña Hogwarts -->
+          </div> <!-- Fin Pestaña Slytherin -->
+          <div class="tab-pane fade active show texto5" id="hogwarts" role="tabpanel" aria-labelledby="hogwarts-tab">
+            <!-- Pestaña Hogwarts -->
             <div class="row contenedor-tarjetas">
               <div class="card col-3 tarjeta hog-sec">
                 <div class="contenedor-texto-tarjeta">
                   <div class="texto-tarjeta">
-                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                    El profesor Albus Percival Wulfric Brian Dumbledore fue profesor de Transformaciones y más tarde
+                    director del Colegio Hogwarts de Magia y Hechicería. También se desempeñó como Jefe Supremo de la
+                    Confederación Internacional de Magos y como Jefe de Magos del Wizengamot.
                   </div>
-                  <img src="imagenes/albus_dumbledore.jpg" class="card-img-top imagen-tarjeta" alt="Albus Dumbledore - Director de Hogwarts">
+                  <img src="imagenes/albus_dumbledore.jpg" class="card-img-top imagen-tarjeta"
+                    alt="Albus Dumbledore - Director de Hogwarts">
                   <div class="card-body">
                     <h5 class="card-title">Albus Dumbledore</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Albus Percival Wulfric Brian Dumbledore es, hasta el final de Harry Potter y el
+                      Misterio del Príncipe, el director del Colegio Hogwarts de Magia y Hechicería.</p>
                   </div>
                 </div>
               </div>
               <div class="card col-3 tarjeta hog-sec">
                 <div class="contenedor-texto-tarjeta">
                   <div class="texto-tarjeta">
-                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                    Es el hogar del Colegio Hogwarts de Magia y Hechicería. Está rodeada por todo tipo de encantamientos
+                    con tal de que los muggles no lo descubran: si alguno se acerca al castillo, lo único que verá será
+                    unas ruinas enmohecidas con una señal de aviso por no ser segura.
                   </div>
-                  <img src="imagenes/hogwarts_castillo.jpg" class="card-img-top imagen-tarjeta" alt="Castillo de Hogwarts">
+                  <img src="imagenes/hogwarts_castillo.jpg" class="card-img-top imagen-tarjeta"
+                    alt="Castillo de Hogwarts">
                   <div class="card-body">
                     <h5 class="card-title">Castillo de Hogwarts</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+                    <p class="card-text">El Castillo de Hogwarts es un edificio mágico con muchas torres y torretas,
+                      construido hace más de mil años por un mago arquitecto.</p>
                   </div>
                 </div>
               </div>
               <div class="card col-3 tarjeta hog-sec">
                 <div class="contenedor-texto-tarjeta">
                   <div class="texto-tarjeta">
-                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                    Tiene más de diez siglos de antigüedad (perteneció a Godric Gryffindor), y un aspecto algo sucio,
+                    con muchos remiendos. La Ceremonia de Selección se celebra al inicio del banquete de comienzo de
+                    año, en el Gran Comedor de Hogwarts.
                   </div>
-                  <img src="imagenes/sombrero_seleccionador.png" class="card-img-top imagen-tarjeta" alt="Reliquia de Hogwarts - Sombrero Seleccionador">
+                  <img src="imagenes/sombrero_seleccionador.png" class="card-img-top imagen-tarjeta"
+                    alt="Reliquia de Hogwarts - Sombrero Seleccionador">
                   <div class="card-body">
                     <h5 class="card-title">Sombrero Seleccionador</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">El Sombrero Seleccionador tiene la misión de determinar a cuál de las cuatro
+                      casas (Gryffindor, Hufflepuff, Ravenclaw o Slytherin) debe pertenecer un nuevo estudiante al
+                      entrar en Hogwarts.</p>
                   </div>
                 </div>
               </div>
               <div class="card col-3 tarjeta hog-sec">
                 <div class="contenedor-texto-tarjeta">
                   <div class="texto-tarjeta">
-                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                    Es el guardabosques de Hogwarts y también el Profesor de Cuidado de Criaturas Mágicas. Es un gran
+                    amigo de Albus Dumbledore y de Harry Potter, miembro de la Orden del Fénix. Es uno de los primeros
+                    personajes en afirmar que la obsesión por la sangre es una tontería.
                   </div>
-                  <img src="imagenes/hagrid.jpg" class="card-img-top imagen-tarjeta" alt="Guardabosques - Rubeus Hagrid">
+                  <img src="imagenes/hagrid.jpg" class="card-img-top imagen-tarjeta"
+                    alt="Guardabosques - Rubeus Hagrid">
                   <div class="card-body">
                     <h5 class="card-title">Rubeus Hagrid</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">El Profesor Rubeus Hagrid, familiarmente conocido sólo por su apellido,
+                      "Hagrid", era un mago semi gigante.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div> <!-- Fin Pestaña Hogwarts -->
-          <div class="tab-pane fade texto3" id="Hufflepuff" role="tabpanel" aria-labelledby="huf-tab"> <!-- Pestaña Hufflepuff -->
+          <div class="tab-pane fade texto3" id="hufflepuff" role="tabpanel" aria-labelledby="hufflepuff-tab">
+            <!-- Pestaña Hufflepuff -->
             <div class="row contenedor-tarjetas">
               <div class="card col-3 tarjeta huf-sec">
                 <div class="contenedor-texto-tarjeta">
                   <div class="texto-tarjeta">
-                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                    Helga admitió estudiantes a su casa que no tuvieran miedo a trabajar duro. Mientras los otros
+                    fundadores tomaban estudiantes basándose en sus ambiciones, valentía, o inteligencia, Helga
+                    Hufflepuff tomó al resto de ellos, tratándolos a todos por igual y enseñándoles todo lo que sabía.
+                    También dispuso que los elfos domésticos trabajaran en la cocina.
                   </div>
-                  <img src="imagenes/Helgahufflepuff.jpg" class="card-img-top imagen-tarjeta" alt="Helga Hufflepuff - Fundadora de la casa Hufflepuff">
+                  <img src="imagenes/Helgahufflepuff.jpg" class="card-img-top imagen-tarjeta"
+                    alt="Helga Hufflepuff - Fundadora de la casa Hufflepuff">
                   <div class="card-body">
                     <h5 class="card-title">Helga Hufflepuff</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Helga Hufflepuff fue una bruja de la época medieval y fue una de los cuatro
+                      fundadores del Colegio Hogwarts de Magia y Hechicería.</p>
                   </div>
                 </div>
               </div>
               <div class="card col-3 tarjeta huf-sec">
                 <div class="contenedor-texto-tarjeta">
                   <div class="texto-tarjeta">
-                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                    La entrada a la sala común se encuentra "en un rincón en el lado derecho del pasillo de las
+                    cocinas", oculta detrás de una pila de barriles. Para revelar la entrada, no se requiere contraseña.
+                    En su lugar, hay que golpear en el segundo barril de la parte inferior, en el ritmo de "Helga
+                    Hufflepuff".
                   </div>
-                  <img src="imagenes/PM_Sala_comun_de_Hufflepuff.jpg" class="card-img-top imagen-tarjeta" alt="Sala común de Hufflepuff">
+                  <img src="imagenes/PM_Sala_comun_de_Hufflepuff.jpg" class="card-img-top imagen-tarjeta"
+                    alt="Sala común de Hufflepuff">
                   <div class="card-body">
                     <h5 class="card-title">Sala común de Hufflepuff</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+                    <p class="card-text">La sala común de Hufflepuff esta situada en el sótano del Colegio Hogwarts de
+                      Magia y Hechicería. Se dice que es "la sala común más acogedora de todas".</p>
                   </div>
                 </div>
               </div>
               <div class="card col-3 tarjeta huf-sec">
                 <div class="contenedor-texto-tarjeta">
                   <div class="texto-tarjeta">
-                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                    Además de ser el horrocrux más protegido y mejor guardado que tuvo Voldemort se dice que al sostener
+                    la copa se obtenía fuerza, característica de los Hufflepuff. Originalmente perteneció a Helga
+                    Hufflepuff, pero cuando esta murió fue pasando de padres a hijos hasta que llegó a manos de una
+                    descendiente suya llamada Hepzibah Smith, y luego a Lord Voldemort, asesinandola por este motivo.
                   </div>
-                  <img src="imagenes/copahuff.jpg" class="card-img-top imagen-tarjeta" alt="Reliquia de Hufflepuff - Copa de Helga Hufflepuff">
+                  <img src="imagenes/copahuff.jpg" class="card-img-top imagen-tarjeta"
+                    alt="Reliquia de Hufflepuff - Copa de Helga Hufflepuff">
                   <div class="card-body">
                     <h5 class="card-title">Copa de Helga Hufflepuff</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">La copa de Helga Hufflepuff es una pequeña copa de oro de dos asas con un tejón
+                      grabado.</p>
                   </div>
                 </div>
               </div>
               <div class="card col-3 tarjeta huf-sec">
                 <div class="contenedor-texto-tarjeta">
                   <div class="texto-tarjeta">
-                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                    Estudió a los 11 años en el colegio Hogwarts de Magia y Hechicería, donde fue seleccionada para la
+                    casa Hufflepuff y donde después de graduarse, volvió al colegio para ser profesora se Herbología.
+                    Luchó en la Batalla de Hogwarts ayudando a los estudiantes y a los profesores.
                   </div>
-                  <img src="imagenes/pomonasprout.jpg" class="card-img-top imagen-tarjeta" alt="Jefa de casa - Pomona Sprout">
+                  <img src="imagenes/pomonasprout.jpg" class="card-img-top imagen-tarjeta"
+                    alt="Jefa de casa - Pomona Sprout">
                   <div class="card-body">
                     <h5 class="card-title">Pomona Sprout</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Madame profesora Pomona Sprout es una bruja que trabajó como Jefa de la Casa de
+                      Hufflepuff y Jefa del Departamento de Herbología en el Colegio Hogwarts de Magia y Hechicería.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div> <!-- Fin pestaña Hufflepuff -->
-          <div class="tab-pane fade texto4" id="Ravenclaw" role="tabpanel" aria-labelledby="rav-tab"> <!-- Pestaña Ravenclaw -->
+          <div class="tab-pane fade texto4" id="ravenclaw" role="tabpanel" aria-labelledby="ravenclaw-tab">
+            <!-- Pestaña Ravenclaw -->
             <div class="row contenedor-tarjetas">
               <div class="card col-3 tarjeta rav-sec">
                 <div class="contenedor-texto-tarjeta">
                   <div class="texto-tarjeta">
-                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                    Cabe destacar que Ravenclaw era extremadamente inteligencia y sabia, muy sabia, por lo que todos y
+                    cada uno de sus alumnos deben de tener una inteligencia fuera de lo común, la gente creativa,
+                    inteligente y sabia es bienvenida en Ravenclaw. Ravenclaw fue madre, Helena, la cual fue estudiante
+                    de su propia madre, en efecto.. Rowena Ravenclaw dio clases a su propia hija.
                   </div>
-                  <img src="imagenes/rowenaravenclaw.jpg" class="card-img-top imagen-tarjeta" alt="Rowena Ravenclaw - Fundadora de la casa Ravenclaw">
+                  <img src="imagenes/rowenaravenclaw.jpg" class="card-img-top imagen-tarjeta"
+                    alt="Rowena Ravenclaw - Fundadora de la casa Ravenclaw">
                   <div class="card-body">
                     <h5 class="card-title">Rowena Ravenclaw</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">La Profesora Rowena Ravenclaw era una bruja escocesa que vivía en la Edad
+                      Media. Destaca por su inteligencia y creatividad. Fue una de los cuatro fundadores del Colegio
+                      Hogwarts de Magia y Hechicería.</p>
                   </div>
                 </div>
               </div>
               <div class="card col-3 tarjeta rav-sec">
                 <div class="contenedor-texto-tarjeta">
                   <div class="texto-tarjeta">
-                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                    La Sala Común de Ravenclaw es una de las habitaciones más aereadas en Hogwarts. Es una amplia sala
+                    circular con una alfombra azul medianoche, ventanas de arco adornado con suave seda azul y bronce, y
+                    un techo abovedado pintado con estrellas.
                   </div>
-                  <img src="imagenes/ravenclawsalacomun.png" class="card-img-top imagen-tarjeta" alt="Sala común de Ravenclaw">
+                  <img src="imagenes/ravenclawsalacomun.png" class="card-img-top imagen-tarjeta"
+                    alt="Sala común de Ravenclaw">
                   <div class="card-body">
                     <h5 class="card-title">Sala común de Ravenclaw</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+                    <p class="card-text">La Torre de Ravenclaw se encuentra en el lado oeste de Hogwarts, la escalera
+                      que conduce a la sala común se encuentra probablemente en el séptimo piso, y es la ubicación de la
+                      Sala Común de Ravenclaw y los dormitorios.</p>
                   </div>
                 </div>
               </div>
               <div class="card col-3 tarjeta rav-sec">
                 <div class="contenedor-texto-tarjeta">
                   <div class="texto-tarjeta">
-                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                    Se dijo que realzaba la sabiduría de su portador, el atributo más preciado de la Casa de Ravenclaw.
+                    Tiene un zafiro azul con forma de óvalo. La diadema fue luego robada por su hija, Helena, un hecho
+                    que Rowena mantuvo en secreto desde los otros fundadores hasta su lecho de muerte.
                   </div>
-                  <img src="imagenes/diademarav.jpg" class="card-img-top imagen-tarjeta" alt="Reliquia de Ravenclaw - Diadema de Rowena Ravenclaw">
+                  <img src="imagenes/diademarav.jpg" class="card-img-top imagen-tarjeta"
+                    alt="Reliquia de Ravenclaw - Diadema de Rowena Ravenclaw">
                   <div class="card-body">
                     <h5 class="card-title">Diadema de Rowena Ravenclaw</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">La Diadema de Ravenclaw fue la única reliquia conocida que perteneció a Rowena
+                      Ravenclaw, la fundadora de la Casa de Ravenclaw en el Colegio Hogwarts de Magia y Hechicería. </p>
                   </div>
                 </div>
               </div>
               <div class="card col-3 tarjeta rav-sec">
                 <div class="contenedor-texto-tarjeta">
                   <div class="texto-tarjeta">
-                    Ravenclaw es una de las cuatro casas en las que se dividen los estudiantes del Colegio Hogwarts de Magia y Hechicería en el universo de los libros y películas de Harry Potter. Esta casa fue fundada por Rowena Ravenclaw y solo son escogidas personas inteligentes, creativas y sabias.
+                    El profesor Filius Flitwick es un mago semiduende que asistió a Colegio Hogwarts de Magia y
+                    Hechicería y fue seleccionado para la casa Ravenclaw, donde fue un joven inteligente y un estudiante
+                    modelo. Algún tiempo después de su graduación, Flitwick regresó a Hogwarts y se convirtió en
+                    profesor de Encantamientos, así como en jefe de la casa Ravenclaw.
                   </div>
-                  <img src="imagenes/Filius_flitwick.jpg" class="card-img-top imagen-tarjeta" alt="Jefe de casa - Filius Flitwick">
+                  <img src="imagenes/Filius_flitwick.jpg" class="card-img-top imagen-tarjeta"
+                    alt="Jefe de casa - Filius Flitwick">
                   <div class="card-body">
                     <h5 class="card-title">Filius Flitwick</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Filius Flitwick es el profesor de encantamientos en Hogwarts y el jefe de la
+                      casa de Ravenclaw.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-      </div> <!-- Fin Pestaña Ravenclaw -->
-    </section>
-  <div class="fondo-superior">
-    <section id="hechizos" class="section-position"> <!-- Seccion hechizos -->
-      <div class="separador" data-aos="fade-up" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"><img src="imagenes/varita-separador.png" alt="Varita"></div>
-      <h2 class="lookBook">Hechizos</h2>
-      <div class="hechizos-contenedor row">
-        <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true" data-aos-duration="1000">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="imagenes/Accio.png" class="card-img" alt="Hechizo Accio">
-            </div>
-            <div class="flip-card-back">
-              <h3>Accio</h3> 
-              <p>Hechizo</p> 
-              <p>We love that guy</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true" data-aos-duration="1000">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="imagenes/Aguamenti.png" class="card-img" alt="Hechizo Aguamenti">
-            </div>
-            <div class="flip-card-back">
-              <h3>Aguamenti</h3> 
-              <p>Hechizo</p> 
-              <p>We love that guy</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true" data-aos-duration="1000">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="imagenes/Alohomora.png" class="card-img" alt="Hechizo Alohomora">
-            </div>
-            <div class="flip-card-back">
-              <h3>Alohomora</h3> 
-              <p>Hechizo</p> 
-              <p>We love that guy</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true" data-aos-duration="1000">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="imagenes/ArrestoMomentum.png" class="card-img" alt="Hechizo Arresto Momentum">
-            </div>
-            <div class="flip-card-back">
-              <h3>Arresto Momentum</h3> 
-              <p>Hechizo</p> 
-              <p>We love that guy</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true" data-aos-duration="1000">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="imagenes/Bombarda.png" class="card-img" alt="Hechizo Bombarda">
-            </div>
-            <div class="flip-card-back">
-              <h3>Bombarda</h3> 
-              <p>Hechizo</p> 
-              <p>We love that guy</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true" data-aos-duration="1000">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="imagenes/Diffindo.png" class="card-img" alt="Hechizo Diffindo">
-            </div>
-            <div class="flip-card-back">
-              <h3>Diffindo</h3> 
-              <p>Hechizo</p> 
-              <p>We love that guy</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true" data-aos-duration="1000">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="imagenes/Ebublio.png" class="card-img" alt="Hechizo Ebublio">
-            </div>
-            <div class="flip-card-back">
-              <h3>Ebublio</h3> 
-              <p>Hechizo</p> 
-              <p>We love that guy</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true" data-aos-duration="1000">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="imagenes/ExpectoPatronum.png" class="card-img" alt="Hechizo Expecto Patronum">
-            </div>
-            <div class="flip-card-back">
-              <h3>Expectro Patronum</h3> 
-              <p>Hechizo</p> 
-              <p>We love that guy</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true" data-aos-duration="1000">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="imagenes/Finite.png" class="card-img" alt="Hechizo Finite">
-            </div>
-            <div class="flip-card-back">
-              <h3>Finite</h3> 
-              <p>Hechizo</p> 
-              <p>We love that guy</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true" data-aos-duration="1000">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="imagenes/Flipendo.png" class="card-img" alt="Hechizo Flipendo">
-            </div>
-            <div class="flip-card-back">
-              <h3>Flipendo</h3> 
-              <p>Hechizo</p> 
-              <p>We love that guy</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true" data-aos-duration="1000">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="imagenes/Incendio.png" class="card-img" alt="Hechizo Incendio">
-            </div>
-            <div class="flip-card-back">
-              <h3>Incendio</h3> 
-              <p>Hechizo</p> 
-              <p>We love that guy</p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true" data-aos-duration="1000">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="imagenes/MeteoloembrujoRecanto.png" class="card-img" alt="Hechizo Meteoloembrujo Recanto">
-            </div>
-            <div class="flip-card-back">
-              <h3>Meteoloembrujo Recanto</h3> 
-              <p>Hechizo</p> 
-              <p>We love that guy</p>
-            </div>
-          </div>
-        </div>
+        </div> <!-- Fin Pestaña Ravenclaw -->
       </div>
     </section>
-    <div class="separador" data-aos="fade-up" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"><img src="imagenes/varita-separador.png" alt="Varita"></div>
-    <section id="peliculas" class="postalesSeccion section-position"> <!-- Carrousel de fotos -->
-    <h2 class="lookBook">Peliculas</h2>
-    <table class="container-tabla" cellspacing="10" cellpadding="10">
-      <tr class="row">
-        <td data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000" class="col-sm-12 col-md-12 col-lg-6">
-          <h3>Harry Potter y la Piedra Filosofal</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ullam nostrum nemo repellat deleniti consequatur blanditiis praesentium laboriosam dicta, non voluptate eveniet, dolore quis omnis incidunt veritatis excepturi doloribus aliquid labore rerum magni aliquam reprehenderit asperiores. Reprehenderit laboriosam soluta exercitationem, perferendis minima repellat quisquam officiis modi, officia qui itaque. Nihil!</p>
-          <span><button type="button" class="btn btn-secondary boton-trailer" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-            Ver el Trailer
-          </button></span>
-          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel1">Trailer</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <iframe src="https://www.youtube.com/embed/VyHV0BRtdxo" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
+    <div class="fondo-superior">
+      <section id="hechizos" class="section-position">
+        <!-- Seccion hechizos -->
+        <div class="separador row" data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+          data-aos-duration="1000">
+          <img src="imagenes/separador.png" alt="Varita" class="foto-separador col-11 col-md-6 col-lg-5 col-xl-4">
+        </div>
+        <h2 class="hechizos">Hechizos</h2>
+        <div class="hechizos-contenedor row">
+          <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true"
+            data-aos-duration="1000">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="imagenes/Accio.png" class="card-img" alt="Hechizo Accio">
+              </div>
+              <div class="flip-card-back">
+                <h3>Accio</h3>
+                <p>Atrae un objeto hacia el que lo lanza.</p>
               </div>
             </div>
           </div>
-        </td>
-        <td data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000" class="col-sm-12 col-md-12 col-lg-6"><img src="imagenes/HPyLPF.jpg" class="imagen-poster" alt="Harry Potter y La Piedra Filosofal"></td>
-      </tr>
-      <tr class="row">
-        <td data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000" class="col-sm-12 col-md-12 col-lg-6"><img src="imagenes/HPyLCS.jpg" class="imagen-poster" alt="Harry Potter y La Cámara Secreta"></td>
-        <td data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000" class="col-sm-12 col-md-12 col-lg-6">
-          <h3>Harry Potter y la Camara Secreta</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, veniam quae ex, molestias aspernatur unde maxime aliquam saepe cupiditate doloribus expedita magni ipsa molestiae quis quam sint magnam. Fuga, praesentium? Distinctio repellendus sit maiores itaque deserunt ad aliquid fugit ex blanditiis, unde tempora recusandae nihil, quo sunt eos! Fuga, eligendi.</p>
-          <button type="button" class="btn btn-secondary boton-trailer" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-            Ver el Trailer
-          </button>
-          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel2">Trailer</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <iframe src="https://www.youtube.com/embed/1bq0qff4iF8" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
+          <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true"
+            data-aos-duration="1000">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="imagenes/Aguamenti.png" class="card-img" alt="Hechizo Aguamenti">
+              </div>
+              <div class="flip-card-back">
+                <h3>Aguamenti</h3>
+                <p>Crea un chorro de agua potable desde la varita.</p>
               </div>
             </div>
           </div>
-        </td>
-      </tr>
-      <tr class="row">
-        <td data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000" class="col-sm-12 col-md-12 col-lg-6">
-          <h3>Harry Potter y el Prisionero de Azkaban</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perspiciatis voluptates praesentium? Nam ipsum aliquid ipsam beatae, quis tenetur earum exercitationem. Iste soluta quam est incidunt nesciunt sapiente aut ex repudiandae, numquam assumenda earum. Expedita, sapiente porro. Ut illo veniam autem itaque hic iusto cupiditate mollitia reprehenderit, blanditiis vitae dolore! </p>
-          <button type="button" class="btn btn-secondary boton-trailer" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-            Ver el Trailer
-          </button>
-          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel3">Trailer</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <iframe src="https://www.youtube.com/embed/1ZdlAg3j8nI" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
+          <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true"
+            data-aos-duration="1000">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="imagenes/Alohomora.png" class="card-img" alt="Hechizo Alohomora">
+              </div>
+              <div class="flip-card-back">
+                <h3>Alohomora</h3>
+                <p>Desbloquea un objetivo (puertas, cerraduras, ventanas...).</p>
               </div>
             </div>
           </div>
-        </td>
-        <td data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000" class="col-sm-12 col-md-12 col-lg-6"><img src="imagenes/HPyEPDA.jpg" class="imagen-poster" alt="Harry Potter y El Prisionero de Azkaban"></td>
-      </tr>
-      <tr class="row">
-        <td data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000" class="col-sm-12 col-md-12 col-lg-6"><img src="imagenes/HPyECDF.jpg" class="imagen-poster" alt="Harry Potter y El Caliz de Fuego"></td>
-        <td data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000" class="col-sm-12 col-md-12 col-lg-6">
-          <h3>Harry Potter y el Caliz de Fuego</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, reprehenderit. Voluptate dicta voluptatibus itaque laudantium soluta doloremque aspernatur consectetur minima impedit nisi a consequatur quos ab eaque eos voluptatem, eum quod ea exercitationem sit quas. Praesentium, ducimus explicabo temporibus placeat nam quas laborum unde? Quos eius eum enim tenetur distinctio?</p>
-          <button type="button" class="btn btn-secondary boton-trailer" data-bs-toggle="modal" data-bs-target="#exampleModal4">
-            Ver el Trailer
-          </button>
-          <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel4">Trailer</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <iframe src="https://www.youtube.com/embed/3EGojp4Hh6I" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video col-xs-12 col-sm-12 col-md-12 col-4"></iframe>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
+          <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true"
+            data-aos-duration="1000">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="imagenes/ArrestoMomentum.png" class="card-img" alt="Hechizo Arresto Momentum">
+              </div>
+              <div class="flip-card-back">
+                <h3>Arresto Momentum</h3>
+                <p>Reduce la velocidad de un objetivo.</p>
               </div>
             </div>
           </div>
-        </td>
-      </tr>
-      <tr class="row">
-        <td data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000" class="col-sm-12 col-md-12 col-lg-6">
-          <h3>Harry Potter y la Orden del Fenix</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusantium aliquam similique, maiores minima placeat voluptate. Illo, quisquam? Quibusdam, odit atque, nesciunt saepe quaerat tempore quia modi perspiciatis eligendi eum ullam molestias at officiis provident sapiente magnam laborum corrupti, illo facilis vitae architecto voluptatibus impedit. Inventore, officiis. Tempora, libero fugiat!</p>
-        <button type="button" class="btn btn-secondary boton-trailer" data-bs-toggle="modal" data-bs-target="#exampleModal5">
-          Ver el Trailer
-        </button>
-        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel5">Trailer</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true"
+            data-aos-duration="1000">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="imagenes/Bombarda.png" class="card-img" alt="Hechizo Bombarda">
               </div>
-              <div class="modal-body">
-                <iframe src="https://www.youtube.com/embed/y6ZW7KXaXYk" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <div class="flip-card-back">
+                <h3>Bombarda</h3>
+                <p>Detona un objetivo con una pequeña explosión.</p>
               </div>
             </div>
           </div>
-        </div></td>
-        <td data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000" class="col-sm-12 col-md-12 col-lg-6"><img src="imagenes/HPyLODF.jpg" class="imagen-poster" alt="Harry Potter y La Orden del Fenix"></td>
-      </tr>
-      <tr class="row">
-        <td data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000" class="col-sm-12 col-md-12 col-lg-6"><img src="imagenes/HPyEPM.jpg" class="imagen-poster" alt="Harry Potter y El Principe Mestizo"></td>
-        <td data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000" class="col-sm-12 col-md-12 col-lg-6">
-          <h3>Harry Potter y el Principe Mestizo</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, fugiat. Asperiores quam eos tempora enim hic repellendus, nisi non aut expedita consequatur, sit eius optio eveniet praesentium itaque natus fuga nam in saepe. Illum sit odit, a nihil sint quae maiores dignissimos quibusdam magnam, ut perspiciatis debitis! Distinctio, non illum?</p>
-          <button type="button" class="btn btn-secondary boton-trailer" data-bs-toggle="modal" data-bs-target="#exampleModal6">
-            Ver el Trailer
-          </button>
-          <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel6">Trailer</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <iframe src="https://www.youtube.com/embed/sg81Lts5kYY" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
+          <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true"
+            data-aos-duration="1000">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="imagenes/Diffindo.png" class="card-img" alt="Hechizo Diffindo">
+              </div>
+              <div class="flip-card-back">
+                <h3>Diffindo</h3>
+                <p>Corta un hechizo de oponente.</p>
               </div>
             </div>
           </div>
-        </td>
-      </tr>
-      <tr class="row">
-        <td data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000" class="col-sm-12 col-md-12 col-lg-6">
-          <h3>Harry Potter y las Reliquias de la Muerte - Parte 1</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas sunt, nisi libero officia nobis, quasi sapiente recusandae, ratione quibusdam quam tempora corporis. Nam debitis nobis itaque libero cupiditate voluptatum repudiandae voluptate architecto perspiciatis id. Velit ducimus, tempora cumque eveniet neque, nobis laboriosam alias natus eligendi possimus omnis obcaecati ipsum quia!</p>
-          <button type="button" class="btn btn-secondary boton-trailer" data-bs-toggle="modal" data-bs-target="#exampleModal7">
-            Ver el Trailer
-          </button>
-          <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel7">Trailer</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <iframe src="https://www.youtube.com/embed/MxqsmsA8y5k" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
+          <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true"
+            data-aos-duration="1000">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="imagenes/Ebublio.png" class="card-img" alt="Hechizo Ebublio">
+              </div>
+              <div class="flip-card-back">
+                <h3>Ebublio</h3>
+                <p>Atrapa a un objetivo en una burbuja.</p>
               </div>
             </div>
           </div>
-        </td>
-        <td data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000" class="col-sm-12 col-md-12 col-lg-6"><img src="imagenes/HPyLRDLM1.jpg" class="imagen-poster" alt="Harry Potter y Las Reliquias de la Muerte - Parte 1">
-        </td>
-      </tr>
-      <tr class="row">
-        <td data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000" class="col-sm-12 col-md-12 col-lg-6"><img src="imagenes/HPyLRDLM2.jpg" class="imagen-poster" alt="Harry Potter y Las Reliquias de la Muerte - Parte 2"></td>
-        <td data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000" class="col-sm-12 col-md-12 col-lg-6">
-          <h3>Harry Potter y las Reliquias de la Muerte - Parte 2</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores repellendus ratione reprehenderit repudiandae harum doloremque at praesentium? Reprehenderit odio recusandae culpa laborum perferendis ipsa veniam at dolor corrupti, quam velit nobis possimus? Quos asperiores cumque facilis ab enim quaerat excepturi quae ratione optio! Tenetur soluta earum enim odio sequi?</p>
-          <button type="button" class="btn btn-secondary boton-trailer" data-bs-toggle="modal" data-bs-target="#exampleModal8">
-            Ver el Trailer
-          </button>
-          <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel8" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel8">Trailer</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <iframe src="https://www.youtube.com/embed/PUXpgitNeOU" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
+          <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true"
+            data-aos-duration="1000">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="imagenes/ExpectoPatronum.png" class="card-img" alt="Hechizo Expecto Patronum">
+              </div>
+              <div class="flip-card-back">
+                <h3>Expectro Patronum</h3>
+                <p>La única defensa contra los dementores.</p>
               </div>
             </div>
           </div>
-        </td>
-      </tr>
-    </table>
-    </section>
-    <div class="separador" data-aos="fade-up" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"><img src="imagenes/varita-separador.png" alt="Varita"></div>
-    <section id="contacto" class="contactoSeccion section-position">
-      <h2 class="contacto">Contacto</h2>
-      <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 contenedor-carousel">
-          <div id="carouselIndicadores" class="carousel slide" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-bs-target="#carouselIndicadores" data-bs-slide-to="0" class="active"></li>
-              <li data-bs-target="#carouselIndicadores" data-bs-slide-to="1"></li>
-              <li data-bs-target="#carouselIndicadores" data-bs-slide-to="2"></li>
-              <li data-bs-target="#carouselIndicadores" data-bs-slide-to="3"></li>
-              <li data-bs-target="#carouselIndicadores" data-bs-slide-to="4"></li>
-            </ol>
-            <div class="carousel-inner carousel-position">
-              <div class="carousel-item active">
-                <img src="imagenes/HogwartsHP.jpg" class="imagen-carrousel" alt="Hogwarts en Tour London">
+          <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true"
+            data-aos-duration="1000">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="imagenes/Finite.png" class="card-img" alt="Hechizo Finite">
               </div>
-              <div class="carousel-item">
-                <img src="imagenes/GranComedorHP.jpg" class="imagen-carrousel" alt="Gran Comedor en Tour London">
-              </div>
-              <div class="carousel-item">
-                <img src="imagenes/OficinaDumbledoreHP.jpg" class="imagen-carrousel" alt="Oficina de Dumbledore en Tour London">
-              </div>
-              <div class="carousel-item">
-                <img src="imagenes/GringottsHP.jpg" class="imagen-carrousel" alt="Banco Gringotts en Tour London">
-              </div>
-              <div class="carousel-item">
-                <img src="imagenes/BosqueProhibidoHP.jpg" class="imagen-carrousel" alt="Bosque Prohibido en Tour London">
+              <div class="flip-card-back">
+                <h3>Finite</h3>
+                <p>Hace que los demás hechizos se detengan.</p>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselIndicadores" role="button" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselIndicadores" role="button" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
-            </a>
+          </div>
+          <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true"
+            data-aos-duration="1000">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="imagenes/Flipendo.png" class="card-img" alt="Hechizo Flipendo">
+              </div>
+              <div class="flip-card-back">
+                <h3>Flipendo</h3>
+                <p>Hechizo ofensivo que hace retroceder al objetivo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true"
+            data-aos-duration="1000">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="imagenes/Incendio.png" class="card-img" alt="Hechizo Incendio">
+              </div>
+              <div class="flip-card-back">
+                <h3>Incendio</h3>
+                <p>Enciende fuego.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card col-6 hechizo" data-aos="fade-up" data-aos-delay="400" data-aos-once="true"
+            data-aos-duration="1000">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="imagenes/MeteoloembrujoRecanto.png" class="card-img" alt="Hechizo Meteoloembrujo Recanto">
+              </div>
+              <div class="flip-card-back">
+                <h3>Meteoloembrujo Recanto</h3>
+                <p>Hechizo que se utiliza para modificar el clima.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 container-form">
-          <form class="row">
-            <div class="form-group col-12">
-              <label for="nombre" class="colocar_nombre">Nombre</label>
-              <span class="obligatorio">*</span>
-              <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
-            </div>
-            <div class="form-group col-12">
-              <label for="email" class="colocar_email">Email</label>
-              <span class="obligatorio">*</span>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Escribe tu mail (ejemplo@ejemplo.com)">
-              <small id="emailHelp" class="form-text text-muted">No vamos a compartir tu mail con nadie.</small>
-            </div>
-            <div class="form-group col-12">
-              <label for="telefono" class="colocar_telefono">Telefono</label>
-              <span class="obligatorio">*</span>
-              <input type="text" class="form-control" id="telefono" placeholder="Escribe tu teléfono">
-            </div>
-            <div class="form-group col-12">
-              <label for="asunto" class="colocar_asunto">Asunto</label>
-              <span class="obligatorio">*</span>
-              <input type="text" class="form-control" id="asunto" placeholder="Escribe un asunto">
-            </div>
-            <div class="form-group col-12">
-              <label for="mensaje" class="colocar_mensaje">Mensaje</label>
-              <span class="obligatorio">*</span>
-              <textarea name="introducir_mensaje" class="form-control" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-            </div>
-            <span class="obligatorio aviso"> * </span> <p class="aviso">Los campos son obligatorios.</p>
-            <button type="submit" class="btn btn-secondary button-form">Enviar</button>
-          </form>
+      </section>
+      <section id="peliculas" class="postalesSeccion section-position">
+        <!-- Carrousel de fotos -->
+        <div class="separador row" data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+          data-aos-duration="1000">
+          <img src="imagenes/separador.png" alt="Varita" class="foto-separador col-11 col-md-6 col-lg-5 col-xl-4">
         </div>
+        <h2 class="peliculas">Peliculas</h2>
+        <table class="container-tabla" cellspacing="10" cellpadding="10">
+          <tr class="row">
+            <td data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+              class="col-sm-12 col-md-12 col-lg-6">
+              <h3>Harry Potter y la Piedra Filosofal</h3>
+              <p>El día de su cumpleaños, Harry Potter descubre que es hijo de dos conocidos hechiceros, de los que ha
+                heredado poderes mágicos. Debe asistir a una famosa escuela de magia y hechicería, donde entabla una
+                amistad con dos jóvenes que se convertirán en sus compañeros de aventura. Durante su primer año en
+                Hogwarts, descubre que un malévolo y poderoso mago llamado Voldemort está en busca de una piedra
+                filosofal que alarga la vida de quien la posee.</p>
+              <span class="d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary boton-trailer" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal1">
+                  Ver el Trailer
+                </button>
+              </span>
+              <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content modal-cuerpo">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel1">Trailer - HP y La Piedra Filosofal</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe src="https://www.youtube.com/embed/VyHV0BRtdxo" frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="video"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+              class="col-sm-12 col-md-12 col-lg-6"><img src="imagenes/HPyLPF.jpg" class="imagen-poster"
+                alt="Harry Potter y La Piedra Filosofal"></td>
+          </tr>
+          <tr class="row">
+            <td class="col-12">
+              <div class="separador row" data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+                data-aos-duration="1000">
+                <img src="imagenes/separador2.png" alt="Varita"
+                  class="foto-separador col-10 col-md-7 col-lg-5 col-xl-4">
+              </div>
+            </td>
+          </tr>
+          <tr class="row">
+            <td data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+              class="col-sm-12 col-md-12 col-lg-6"><img src="imagenes/HPyLCS.jpg" class="imagen-poster"
+                alt="Harry Potter y La Cámara Secreta"></td>
+            <td data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+              class="col-sm-12 col-md-12 col-lg-6">
+              <h3>Harry Potter y la Camara Secreta</h3>
+              <p>Harry regresa a su segundo año a Hogwarts, pero descubre que cosas malas ocurren debido a que un sitio
+                llamado la Cámara de los Secretos ha sido abierto por el heredero de Slytherin y hará que los hijos de
+                muggles, los impuros, aparezcan petrificados misteriosamente por un animal monstruoso.</p>
+              <span class="d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary boton-trailer" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal2">
+                  Ver el Trailer
+                </button>
+              </span>
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content modal-cuerpo">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel2">Trailer - HP y La Cámara Secreta</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe src="https://www.youtube.com/embed/1bq0qff4iF8" frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="video"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="row">
+            <td class="col-12">
+              <div class="separador row" data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+                data-aos-duration="1000">
+                <img src="imagenes/separador2.png" alt="Varita"
+                  class="foto-separador col-10 col-md-7 col-lg-5 col-xl-4">
+              </div>
+            </td>
+          </tr>
+          <tr class="row">
+            <td data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+              class="col-sm-12 col-md-12 col-lg-6">
+              <h3>Harry Potter y el Prisionero de Azkaban</h3>
+              <p>Cuando Harry Potter y sus amigos vuelven a Hogwarts para cursar su tercer año de estudios, se ven
+                involucrados en un misterio: de la prisión para magos de Azkaban se ha fugado Sirius Black, un peligroso
+                mago que fue cómplice de Lord Voldemort y que intentará vengarse de Harry Potter. El joven aprendiz de
+                mago contribuyó en gran medida a la condena de Sirius, por lo que hay razones para temer por su vida.
+              </p>
+              <span class="d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary boton-trailer" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal3">
+                  Ver el Trailer
+                </button>
+              </span>
+              <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content modal-cuerpo">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel3">Trailer - HP y El Prisionero de Azkaban</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe src="https://www.youtube.com/embed/1ZdlAg3j8nI" frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="video"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+              class="col-sm-12 col-md-12 col-lg-6"><img src="imagenes/HPyEPDA.jpg" class="imagen-poster"
+                alt="Harry Potter y El Prisionero de Azkaban"></td>
+          </tr>
+          <tr class="row">
+            <td class="col-12">
+              <div class="separador row" data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+                data-aos-duration="1000">
+                <img src="imagenes/separador2.png" alt="Varita"
+                  class="foto-separador col-10 col-md-7 col-lg-5 col-xl-4">
+              </div>
+            </td>
+          </tr>
+          <tr class="row">
+            <td data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+              class="col-sm-12 col-md-12 col-lg-6"><img src="imagenes/HPyECDF.jpg" class="imagen-poster"
+                alt="Harry Potter y El Caliz de Fuego"></td>
+            <td data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+              class="col-sm-12 col-md-12 col-lg-6">
+              <h3>Harry Potter y el Caliz de Fuego</h3>
+              <p>La cuarta parte de la serie del niño mago comienza con la Copa Internacional de Quidditch. Cuenta
+                también el inicio de la atracción por Cho Chang y otro año de magia, en el que una gran sorpresa
+                obligará a Harry a enfrentarse a muchos desafíos temibles. También habrá un torneo de magia para tres
+                escuelas, y el temido regreso de "Aquel-que-no-debe-ser-nombrado".</p>
+              <span class="d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary boton-trailer" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal4">
+                  Ver el Trailer
+                </button>
+              </span>
+              <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content modal-cuerpo">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel4">Trailer - HP y El Caliz de Fuego</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe src="https://www.youtube.com/embed/3EGojp4Hh6I" frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="video col-xs-12 col-sm-12 col-md-12 col-4"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="row">
+            <td class="col-12">
+              <div class="separador row" data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+                data-aos-duration="1000">
+                <img src="imagenes/separador2.png" alt="Varita"
+                  class="foto-separador col-10 col-md-7 col-lg-5 col-xl-4">
+              </div>
+            </td>
+          </tr>
+          <tr class="row">
+            <td data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+              class="col-sm-12 col-md-12 col-lg-6">
+              <h3>Harry Potter y la Orden del Fenix</h3>
+              <p>En su quinto año en Hogwarts, Harry descubre que muchos integrantes de la comunidad de magos no conocen
+                la verdad acerca de su encuentro con Lord Voldemort. Cornelius Fudge, ministro de magia, designa a
+                Dolores Umbridge como maestra de defensa contra de las artes oscuras porque cree que el profesor
+                Dumbledore planea apoderarse de su trabajo. Pero sus enseñanzas son inadecuadas, por lo que Harry
+                prepara a los estudiantes para defender la escuela en contra del mal.</p>
+              <span class="d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary boton-trailer" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal5">
+                  Ver el Trailer
+                </button>
+              </span>
+              <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content modal-cuerpo">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel5">Trailer - HP y La Orden del Fenix</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe src="https://www.youtube.com/embed/y6ZW7KXaXYk" frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="video"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+              class="col-sm-12 col-md-12 col-lg-6"><img src="imagenes/HPyLODF.jpg" class="imagen-poster"
+                alt="Harry Potter y La Orden del Fenix"></td>
+          </tr>
+          <tr class="row">
+            <td class="col-12">
+              <div class="separador row" data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+                data-aos-duration="1000">
+                <img src="imagenes/separador2.png" alt="Varita"
+                  class="foto-separador col-10 col-md-7 col-lg-5 col-xl-4">
+              </div>
+            </td>
+          </tr>
+          <tr class="row">
+            <td data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+              class="col-sm-12 col-md-12 col-lg-6"><img src="imagenes/HPyEPM.jpg" class="imagen-poster"
+                alt="Harry Potter y El Principe Mestizo"></td>
+            <td data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+              class="col-sm-12 col-md-12 col-lg-6">
+              <h3>Harry Potter y el Principe Mestizo</h3>
+              <p>Harry descubre un poderoso libro y, mientras trata de descubrir sus orígenes, colabora con Dumbledore
+                en la búsqueda de una serie de objetos mágicos que ayudarán en la destrucción de Lord Voldemort.</p>
+              <span class="d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary boton-trailer" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal6">
+                  Ver el Trailer
+                </button>
+              </span>
+              <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content modal-cuerpo">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel6">Trailer - HP y El Principe Mestizo</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe src="https://www.youtube.com/embed/sg81Lts5kYY" frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="video"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="row">
+            <td class="col-12">
+              <div class="separador row" data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+                data-aos-duration="1000">
+                <img src="imagenes/separador2.png" alt="Varita"
+                  class="foto-separador col-10 col-md-7 col-lg-5 col-xl-4">
+              </div>
+            </td>
+          </tr>
+          <tr class="row">
+            <td data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+              class="col-sm-12 col-md-12 col-lg-6">
+              <h3>Harry Potter y las Reliquias de la Muerte - Parte 1</h3>
+              <p>Harry, Ron y Hermione se marchan de Hogwarts para iniciar su misión más importante: tienen que destruir
+                los horrocruxes, el secreto del poder y la inmortalidad de Voldemort, en los que el temido mago oscuro
+                guarda los fragmentos de su alma.</p>
+              <span class="d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary boton-trailer" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal7">
+                  Ver el Trailer
+                </button>
+              </span>
+              <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content modal-cuerpo">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel7">Trailer - HP y Las Reliquias de la Muerte - P1
+                      </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe src="https://www.youtube.com/embed/MxqsmsA8y5k" frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="video"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+              class="col-sm-12 col-md-12 col-lg-6"><img src="imagenes/HPyLRDLM1.jpg" class="imagen-poster"
+                alt="Harry Potter y Las Reliquias de la Muerte - Parte 1">
+            </td>
+          </tr>
+          <tr class="row">
+            <td class="col-12">
+              <div class="separador row" data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+                data-aos-duration="1000">
+                <img src="imagenes/separador2.png" alt="Varita"
+                  class="foto-separador col-10 col-md-7 col-lg-5 col-xl-4">
+              </div>
+            </td>
+          </tr>
+          <tr class="row">
+            <td data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+              class="col-sm-12 col-md-12 col-lg-6"><img src="imagenes/HPyLRDLM2.jpg" class="imagen-poster"
+                alt="Harry Potter y Las Reliquias de la Muerte - Parte 2"></td>
+            <td data-aos="fade-right" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000"
+              class="col-sm-12 col-md-12 col-lg-6">
+              <h3>Harry Potter y las Reliquias de la Muerte - Parte 2</h3>
+              <p>El enfrentamiento entre el bien y el mal llega a su punto máximo. La búsqueda de los horrocruxes lleva
+                a los amigos a Hogwarts, donde Harry, Ron y Hermione se preparan para una última batalla contra Lord
+                Voldemort y sus fieles secuaces, los mortífagos, para decidir el futuro del mundo mágico.</p>
+              <span class="d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary boton-trailer" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal8">
+                  Ver el Trailer
+                </button>
+              </span>
+              <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel8"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content modal-cuerpo">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel8">Trailer - HP y Las Reliquias de la Muerte - P2
+                      </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe src="https://www.youtube.com/embed/PUXpgitNeOU" frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="video"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <div class="separador row" data-aos="fade-up" data-aos-delay="500" data-aos-once="true" data-aos-duration="1000">
+        <img src="imagenes/separador.png" alt="Varita" class="foto-separador col-11 col-md-6 col-lg-5 col-xl-4">
       </div>
-    </section>
-    <section class="footer-section section-position">
-    <footer class="pie">
-      <div class="contenedor-iconos">
-        <a href="https://www.instagram.com" class="icono"><img src="imagenes/instagram.svg" alt="Link a Instagram"></a>
-        <a href="https://www.facebook.com" class="icono"><img src="imagenes/facebook.svg" alt="Link a Facebook"></a>
-        <a href="https://www.twitter.com" class="icono"><img src="imagenes/gorjeo.svg" alt="Link a Twitter"></a>
-        <a href="https://www.youtube.com" class="icono"><img src="imagenes/youtube.svg" alt="Link a Youtube"></a>
-      </div>
-        <h6 class="texto-footer">Creado con magia por Juan Pablo Sacco</h6>
-    </footer>
-    </section>
+      <section id="contacto" class="contactoSeccion section-position">
+        <h2 class="contacto">Contacto</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 contenedor-carousel">
+            <div id="carouselIndicadores" class="carousel slide" data-bs-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-bs-target="#carouselIndicadores" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselIndicadores" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselIndicadores" data-bs-slide-to="2"></li>
+                <li data-bs-target="#carouselIndicadores" data-bs-slide-to="3"></li>
+                <li data-bs-target="#carouselIndicadores" data-bs-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner carousel-position">
+                <div class="carousel-item active">
+                  <img src="imagenes/HogwartsHP.jpg" class="imagen-carrousel" alt="Hogwarts en Tour London">
+                </div>
+                <div class="carousel-item">
+                  <img src="imagenes/GranComedorHP.jpg" class="imagen-carrousel" alt="Gran Comedor en Tour London">
+                </div>
+                <div class="carousel-item">
+                  <img src="imagenes/OficinaDumbledoreHP.jpg" class="imagen-carrousel"
+                    alt="Oficina de Dumbledore en Tour London">
+                </div>
+                <div class="carousel-item">
+                  <img src="imagenes/GringottsHP.jpg" class="imagen-carrousel" alt="Banco Gringotts en Tour London">
+                </div>
+                <div class="carousel-item">
+                  <img src="imagenes/BosqueProhibidoHP.jpg" class="imagen-carrousel"
+                    alt="Bosque Prohibido en Tour London">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselIndicadores" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselIndicadores" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 container-form">
+            <form class="row">
+              <div class="form-group col-12">
+                <label for="nombre" class="colocar_nombre">Nombre</label>
+                <span class="obligatorio">*</span>
+                <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+              </div>
+              <div class="form-group col-12">
+                <label for="email" class="colocar_email">Email</label>
+                <span class="obligatorio">*</span>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                  placeholder="Escribe tu mail (ejemplo@ejemplo.com)">
+                <small id="emailHelp" class="form-text text-muted">No vamos a compartir tu mail con nadie.</small>
+              </div>
+              <div class="form-group col-12">
+                <label for="telefono" class="colocar_telefono">Telefono</label>
+                <span class="obligatorio">*</span>
+                <input type="text" class="form-control" id="telefono" placeholder="Escribe tu teléfono">
+              </div>
+              <div class="form-group col-12">
+                <label for="asunto" class="colocar_asunto">Asunto</label>
+                <span class="obligatorio">*</span>
+                <input type="text" class="form-control" id="asunto" placeholder="Escribe un asunto">
+              </div>
+              <div class="form-group col-12">
+                <label for="mensaje" class="colocar_mensaje">Mensaje</label>
+                <span class="obligatorio">*</span>
+                <textarea name="introducir_mensaje" class="form-control" id="mensaje" required="obligatorio"
+                  placeholder="Deja aquí tu comentario..."></textarea>
+              </div>
+              <span class="obligatorio aviso"> * </span>
+              <p class="aviso">Los campos son obligatorios.</p>
+              <button type="submit" class="btn btn-secondary">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="footer-section section-position">
+        <footer class="pie row">
+          <div class="contenedor-iconos col-xs-12 col-md-6 col-lg-6 col-xl-6">
+            <a href="https://www.instagram.com/wizardingworld/?hl=es" class="icono"><img src="imagenes/instagram.svg"
+                alt="Link a Instagram"></a>
+            <a href="https://es-la.facebook.com/wizardingworld/" class="icono"><img src="imagenes/facebook.svg"
+                alt="Link a Facebook"></a>
+            <a href="https://twitter.com/wizardingworld?lang=es" class="icono"><img src="imagenes/gorjeo.svg"
+                alt="Link a Twitter"></a>
+            <a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ" class="icono"><img
+                src="imagenes/youtube.svg" alt="Link a Youtube"></a>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-6 col-xl-6">
+            <h6 class="texto-footer">Creado con magia por Juan Pablo Sacco</h6>
+          </div>
+        </footer>
+      </section>
+    </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+  </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-  AOS.init();
+    AOS.init();
   </script>
 </body>
+
 </html>
